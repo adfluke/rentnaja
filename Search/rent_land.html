@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rent_land</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="search.css"/>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+  </head>
+  <body>
+    <!-- ส่วนของบาร์ข้างบน -->
+    <header>
+      <nav class="main-nav">
+        <ul class="navlinks">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="rent.html">ให้เช่า</a></li>
+          <li><a href="Recommended_items.html">รายการแนะนำ</a></li>
+          <li><a href="#">เกี่ยวกับเรา</a></li>
+          <li><a href="contact_us.html">ติดต่อเรา</a></li>
+          <li><a href="#">ข่าว</a></li>
+          <li><a href="submit-land.html" class="contact">+ ลงประกาศ</a></li>
+          <li><a href="login-th.html">เข้าสู่ระบบ / <a href="register-th.html">สมัครสมาชิก</a></a></li>
+        </ul>
+        <div class="logo">
+          <img src="img/logo.png" alt="" id="vv">
+        </div>
+      </nav>
+    </header>
+    <!-- ส่วนของบาร์ข้างบน -->
+    
+    <div class="wallpaper">
+      <p class="text"> อสังหาริมทรัพย์ให้เช่า</p>
+      <div class="slidershow middle">
+        <div class="slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <input type="radio" name="r" id="r5">
+            
+          <div class="slide s1" >
+            <img src="1.jpg" alt="" id="v1">
+          </div>
+          <div class="slide">
+            <img src="2.jpg" alt="" id="v1">
+          </div>
+          <div class="slide">
+            <img src="3.jpg" alt="" id="v1">
+          </div>
+          <div class="slide">
+            <img src="4.jpeg" alt="" id="v1">
+          </div>
+          <div class="slide">
+            <img src="5.jpg" alt="" id="v1">
+          </div>
+          
+        </div>
+            <div class="navigation">
+              <label for="r1" class="bar"></label>
+              <label for="r2" class="bar"></label>
+              <label for="r3" class="bar"></label>
+              <label for="r4" class="bar"></label>
+              <label for="r5" class="bar"></label>
+            
+            </div>
+      </div>
+    </div>
+
+    <!-- SearchBar -->
+
+    <div class="search-input" id="search_location1">
+      <p class="text2"> ช่องสำหรับค้นหา </p>
+      <div id="search1">
+          <input placeholder="กรอกชื่อ ทำเล โครงการ/รถไฟฟ้า" class="fa fa-search"/>
+          <!-- <input id="input1" placeholder="กรอกชื่อ ทำเล โครงการ / รถไฟฟ้า" /> -->
+          <button id="button1">
+            <i class="fa fa-search"></i>
+          </button>
+        <div class="spinner"><i class="fa fa-spinner"></i></div>
+        
+      </div>
+      <script src="script1.js"></script>
+      
+      
+      <label>
+        <select id="select1">
+          <option>-ประเภทอสังหาริมทรัพย์-</option>
+          <option>ที่ดิน</option>
+          <option>คอนโด</option>
+          <option>บ้าน</option>
+          <option>โฮมออฟฟิศ</option>
+          <option>ทาวน์โฮม</option>
+          <option>พูลวิลล่า</option>
+          <option>อาคารพานิชย์</option>
+          <option>พื้นที่ให้เช่า</option>
+          <option>สำนักงาน</option>
+          <option>โรงงาน</option>
+          <option>โกดัง</option>
+        </select>
+      </label>
+
+      <label>
+        <select id="select2">
+          <option>-ราคา-</option>
+          <option>ราคาน้อย-มาก</option>
+          <option>ราคามาก-น้อย</option>
+        </select>
+      </label>
+
+      <label>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin: 0.em 0em 0em;border-radius: 20px;background-color: white;border: 0;color: black; width: 100px;margin-top: 12px;">
+  -ตัวกรอง-
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" style="color: black;"></h4>
+        
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <label>ช่วงราคา</label><br>
+        <label>0</label><input type="range" value="price" style="color: black;"><label>1000000</label>
+        <br>
+        <br>
+        <label>ขนาดพื้นที่ใช้สอย</label>
+        <select id="select3">
+          <option>ไม่ระบุ</option>
+          <option>น้อยกว่า 1 ไร่</option>
+          <option>1-10 ไร่</option>
+          <option>11-50 ไร่</option>
+          <option>51-100 ไร่</option>
+          <option>มากกว่า 100 ไร่</option>
+        </select>
+        <br>
+        <label>อยู่ผังเมืองในสี</label>
+        <select id="select4">
+          <option>ไม่ระบุ</option>
+          <option>-</option>
+          <option>-</option>
+          <option>-</option>
+          <option>-</option>
+          <option>-</option>
+        </select>
+        <br>
+        <label>ระยะเวลาเช่า</label>
+        <select id="select5">
+          <option>ไม่ระบุ</option>
+          <option>6 เดือน</option>
+          <option>1 ปี</option>
+          <option>2 ปี</option>
+          <option>3 ปี</option>
+          <option>3 ปีขึ้นไป</option>
+        </select>
+        <br>
+        <table>
+        <col span="12">
+        <tr>
+          <td><input type="checkbox">ติดถนนใหญ่</td> 
+          <td><input type="checkbox">ไม่ติดสุสาน</td>
+        </tr>
+        <td><input type="checkbox">ติดซอย</td>
+        <td> <input type="checkbox">ไม่เอาซอยตัน</td>
+      </tr>
+        <td><input type="checkbox">ใกล้แหล่งชุมชน</td>
+        <td><input type="checkbox">ไม่ติดวัด</td>
+      </tr>
+        <td><input type="checkbox">ใกล้จุดขึ้นลงทางด่วน</td>
+        <td><input type="checkbox">ไม่ติดคอสะพาน</td>
+      </tr>
+        <td><input type="checkbox">ถนนกว้างเกิน 6 เมตร</td>
+        <td><input type="checkbox">ไม่เอาบ่อน้ำ</td>
+      </tr>
+        <td><input type="checkbox">ถมแล้ว</td>
+        <td><input type="checkbox">ไม่เป็นที่ดินตาบอด</td>
+        </tr>
+    </table>
+    
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <br>
+        <button type="button" value="Close" data-dismiss="modal" style="border-radius: 20px; background-color: #02d874;">เลือก</button>
+       
+        <!-- <button type="button" data-dismiss="modal">close</button> -->
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+          
+        </select>
+      </label>
+      
+      <!--  -->
+      <input type="submit" value="ค้นหา" id="Submit" style="margin-left: 20px;">
+    </div>
+
+    <!-- /SearchBarEnd -->
+
+    
+    <h1>ที่ดิน</h1>
+    <div class="grid-container">
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>  
+    </div>
+
+    <div class="grid-container1">
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>  
+    </div>
+
+    <div class="grid-container2">
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>  
+    </div>
+
+    <div class="grid-container3">
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>  
+    </div>
+
+    <div class="grid-container4">
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>  
+    </div>
+
+    <div class="grid-container5">
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>
+      <div class="grid-item">
+        <a href="/"><button class="bn632-hover bn22"></button></a>
+      </div>  
+    </div>
+    
+    <footer>
+      <div class="contacts">
+        <h3>ติดต่อและรับข้อมูลข่าวสารได้ที่</h3>
+        <a href="https://www.tiktok.com/@billionbproperty"><img src="img/tik.png" alt="" id="bb"></a>
+        <a href=""><img src="img/line.png" alt="" id="cc"></a>
+        <a href="https://www.facebook.com/BillionBproperty3/"><img src="img/facebook.png" alt="" id="dd"></a>
+        <a href="https://www.youtube.com/channel/UCLYAOkRqaliytHvw9U8ch4w"><img src="img/youtube.png" alt="" id="ee"></a>
+      </div>
+      <div class="image">
+        <img src="img/img_01.png" alt="" id="aa">
+      </div>
+      <hr item-align = "center" size= "2" width= "100%"> 
+      <h4>© Copyright 2021</h4>
+   </footer>
+    
+  </body>
+</html>
+
+
+
+
+
