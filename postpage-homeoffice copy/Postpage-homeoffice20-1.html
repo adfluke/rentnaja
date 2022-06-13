@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./style-sidebar.css">
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+    <link rel="stylesheet" href="./style-postform.css">
+
+</head>
+
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Rentnaja</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">    
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text"><strong>ประเภทอสังหาริมทรัพย์</strong></span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-map-pin icon'></i>
+                            <span class="text nav-text">ที่ดิน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home icon' ></i>
+                            <span class="text nav-text">บ้าน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-circle icon'></i>
+                            <span class="text nav-text">คอนโด</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-building-house icon'></i>
+                            <span class="text nav-text">ทาวน์โฮม</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-smile icon' ></i>
+                            <span class="text nav-text">วิลล่า</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-building-house icon'></i>
+                            <span class="text nav-text">อาคารพาณิชย์</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./Postpage-homeoffice20-1.html">
+                            <i class='bx bx-building-house icon'></i>
+                            <span class="text nav-text">โฮมออฟฟิศ</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-map-alt icon'></i>
+                            <span class="text nav-text">พื้นที่ให้เช่า</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-business icon'></i>
+                            <span class="text nav-text">สำนักงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-factory icon' ></i>
+                            <span class="text nav-text">โรงงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-package icon' ></i>
+                            <span class="text nav-text">โกดัง</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-been-here icon'></i>
+                            <span class="text nav-text">อื่นๆ</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="container"> 
+            <div class="form-container">
+                <h1 class="text">ประกาศ</h1>
+                <form >
+                    <form> 
+                    <p class="sub-text">สถานะผู้ลงประกาศ  <span style="color: red;">*</span><span> </span> : </p>
+
+                    <!-- radio-->
+                    <ul> 
+                        <li>
+                          <input type="radio" id="owner-option" name="selector">
+                          <label for="owner-option">เจ้าของทรัพย์</label>
+                          
+                          <div class="check"><div class="inside"></div></div>
+                        </li>
+
+                        <li>
+                          <input type="radio" id="Agent-option" name="selector">
+                          <label for="Agent-option">Agent รู้จักกับเจ้าของทรัพย์โดยตรง</label>
+                          
+                          <div class="check"><div class="inside"></div></div>
+                        </li>
+                        
+                        <li>
+                          <input type="radio" id="Agent-option2" name="selector">
+                          <label for="Agent-option2">Agent ไม่ได้รู้จักกับเจ้าของทรัพย์โดยตรง</label>
+                          
+                          <div class="check"><div class="inside"></div></div>
+                        </li>
+                      </ul>
+                    <p class="validation">*ต้องการปล่อยให้เช่าอสังหาฯ นี้เท่านั้น</p>
+                    </form>
+                    <form> 
+                    <p class="sub-text">ที่ตั้งโครงการ  <span style="color: red;">*</span><span></span>  :  </p>
+                     <!-- radio-->
+                    <ul> 
+                        <li>
+                          <input type="radio" id="bkk-option" name="selector">
+                          <label for="bkk-option">กรุงเทพและปริมณฑล</label>
+                          
+                          <div class="check"></div>
+                        </li>
+
+                        <li>
+                          <input type="radio" id="provincial-option" name="selector">
+                          <label for="provincial-option">ต่างจังหวัด</label>
+                          
+                          <div class="check"><div class="inside"></div></div>
+                        </li> 
+                      </ul>
+                    <p class="validation">*ปริมณฑล  ได้แก่ จังหวัดนครปฐม จังหวัดนนทบุรี จังหวัดปทุมธานี จังหวัด สมุทรปราการ และจังหวัดสมุทรสาคร</p>
+                </form>
+                </form>
+                
+                <div class="btnall"> 
+                    <table>
+                        <tr>
+                            <td>
+                                <button class="btn1"  > บันทึก</button> 
+                            </td>
+                            <td>
+                                <a href="./postpang-homoffice20-2.html" >  <button class="btn2"  > ถัดไป</button> </a>
+                            </td>
+                        </tr>
+                    
+                    </table>
+                </div>
+            </div>
+
+        </div>
+            
+        
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
