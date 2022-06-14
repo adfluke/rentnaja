@@ -1,25 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Kanit:wght@100;200;300&family=Poppins:wght@100;300&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-family: 'Kanit', sans-serif;
 }
 
 /*======= Header navigation bar =======*/
-header{
+header {
     z-index: 999;
     position: fixed;
     width: 100%;
 }
-body{
+
+body {
     background: #000116;
 }
 
-header .nav-bar{
+header .nav-bar {
     position: relative;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
@@ -34,7 +35,7 @@ header .nav-bar{
     transition: 0.5s ease;
 }
 
-.nav-bar .logo{
+.nav-bar .logo {
     color: rgb(255, 255, 255);
     font-size: 2em;
     font-weight: 600;
@@ -43,17 +44,17 @@ header .nav-bar{
     text-decoration: none;
 }
 
-.navigation .nav-items a{
+.navigation .nav-items a {
     color: rgb(255, 255, 255);
     font-size: 1.3em;
     text-decoration: none;
 }
 
-.navigation .nav-items a:not(:last-child){
+.navigation .nav-items a:not(:last-child) {
     margin-right: 40px;
 }
 
-.navigation .nav-items a i{
+.navigation .nav-items a i {
     display: none;
 }
 
@@ -70,7 +71,7 @@ header .nav-bar{
     justify-content: center;
     align-items: center;
     margin-bottom: none;
-  }
+}
 
 /* .home:before{
     z-index: 888;
@@ -87,63 +88,64 @@ header .nav-bar{
     color: rgba(255, 255, 255, 0.5);
     font-size: 6em;
     font-weight: 600;
-  }
+}
 
 /*======= Content section =======*/
-.content h1{
+.content h1 {
     color: #fff;
     font-size: 3.5em;
     font-weight: 600;
 }
 
-.content p{
+.content p {
     color: rgb(0, 0, 0);
     font-size: 1em;
     margin: 30px 0;
 }
 
 /*======= Scroll bar =======*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background: rgb(189, 160, 160);
     width: 10px;
     border-radius: none;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #282f4e;
     width: 100%;
     /* border-radius: 2em; */
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     background: #454f6d;
 }
 
 /*======= Scroll indicator bar =======*/
-.scroll-indicator-container{
+.scroll-indicator-container {
     width: 100%;
     height: 5px;
 }
 
-.scroll-indicator-bar{
+.scroll-indicator-bar {
     background: #2ace1b;
     width: 0%;
     height: 100%;
     box-shadow: 0 5px 25px #199fff,
-                0 5px 50px #199fff;
+        0 5px 50px #199fff;
 }
 
-.nav-close-btn, .nav-menu-btn{
+.nav-close-btn,
+.nav-menu-btn {
     display: none;
 }
 
 /*======= Media queries (max-width: 1100px) =======*/
-@media screen and (max-width: 1100px){
-    header .nav-bar{
+@media screen and (max-width: 1100px) {
+    header .nav-bar {
         padding: 0 50px;
     }
 
-    section{
+    section {
         padding: 30px 50px;
         font-size: 0.9em;
     }
@@ -162,14 +164,14 @@ header .nav-bar{
     }
 
     /*======= Navigation menu =======*/
-    .nav-menu-btn{
+    .nav-menu-btn {
         display: block;
         color: #fff;
         font-size: 2em;
         cursor: pointer;
     }
 
-    .navigation{
+    .navigation {
         z-index: 99999;
         position: fixed;
         background: rgba(255, 255, 255, 0.5);
@@ -185,12 +187,12 @@ header .nav-bar{
         transition: 0.3s ease;
     }
 
-    .navigation.active{
+    .navigation.active {
         visibility: visible;
         opacity: 1;
     }
 
-    .navigation .nav-items{
+    .navigation .nav-items {
         position: relative;
         background: #fff;
         width: 400px;
@@ -205,23 +207,23 @@ header .nav-bar{
         transition: 0.3s ease;
     }
 
-    .navigation.active .nav-items{
+    .navigation.active .nav-items {
         transform: translateY(0);
     }
 
-    .navigation .nav-items a{
+    .navigation .nav-items a {
         color: rgb(255, 255, 255);
         font-size: 5em;
         margin: 15px 50px;
     }
 
-    .navigation .nav-items a i{
+    .navigation .nav-items a i {
         display: inline-block;
         font-size: 5em;
         margin-right: 5px;
     }
 
-    .nav-close-btn{
+    .nav-close-btn {
         display: block;
         color: rgb(255, 255, 255);
         position: absolute;
@@ -232,7 +234,8 @@ header .nav-bar{
         cursor: pointer;
     }
 }
-.navigation .nav-items a1{
+
+.navigation .nav-items a1 {
     background-color: red;
     color: rgb(255, 255, 255);
     font-size: 1.1em;
@@ -243,7 +246,7 @@ header .nav-bar{
     border-bottom: none;
 }
 
-.logo #vv{
+.logo #vv {
     width: 80px;
     height: 100px;
     margin-left: -80px;
@@ -258,18 +261,29 @@ header .nav-bar{
     border-top: 16px solid #3498db;
     width: 120px;
     height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
     animation: spin 2s linear infinite;
     margin-left: 46%;
     margin-top: 400px;
-  }
+}
 
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

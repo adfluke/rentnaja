@@ -6,9 +6,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-section {
+section{
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -25,11 +25,11 @@ body {
   position: relative;
   height: 100%;
 }
-/* .swiper mySwiper{
+.swiper mySwiper{
       width: 100%;
       padding-top: 50px;
       padding-bottom: 50px;
-  } */
+  }
 .swiper {
   width: 100%;
   padding-top: 50px;

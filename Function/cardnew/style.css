@@ -28,45 +28,43 @@ section{
   width: 950px;
 }
 
-.card{
+/* .card{
   position: relative;
   background: #fff;
   border-radius: 20px;
   margin: 20px 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .card::before{
   content: "";
   position: absolute;
   height: 40%;
   width: 100%;
-  background: #093624;
-  border-radius: 20px 20px 0 0;
+  /* background: #093624; */
+  border-radius: 20px;
 }
 
-.card .card-content{
+/* .card .card-content{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
   position: relative;
   z-index: 100;
-}
+} */
 
 section .card .image{
-  height: 140px;
-  width: 140px;
-  border-radius: 50%;
+  height: 100%;
+  width: 100%;
   padding: 3px;
-  background: #0d7fac;
 }
 
 section .card .image img{
+  border-radius: 20px;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 50%;
   border: 3px solid rgb(255, 255, 255);
 }
 

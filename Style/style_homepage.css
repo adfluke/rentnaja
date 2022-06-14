@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Kanit:wght@100;200;300&family=Poppins:wght@100;300&display=swap");
+
 body {
   background-color: #000016;
 }
+
 .wrapper {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
@@ -10,6 +12,7 @@ body {
   max-width: 1000px;
   margin: 60px auto;
   margin-top: 100px;
+  
 }
 
 .box {
@@ -18,6 +21,7 @@ body {
   font-size: 18px;
   padding: 25px;
   border-radius: 10px;
+  box-shadow: 1px 1px 6px 2px rgba(18, 202, 101, 0.73);
 }
 
 .box-1,
@@ -86,7 +90,8 @@ a.box-12 {
 /*ส่วนของประเภทอสังหาริมทรัพย์*/
 
 h1 {
-  color: #ffffff; /*ส่วนของประเภทอสังหาริมทรัพย์และของข่าวgr*/
+  color: #ffffff;
+  /*ส่วนของประเภทอสังหาริมทรัพย์และของข่าวgr*/
   font-size: 25px;
   padding: 20px;
   margin-left: 350px;
@@ -96,12 +101,17 @@ h1 {
   width: 1200px;
   margin: 50px auto;
   margin-top: 10px;
+  /* box-shadow: 1px 1px 6px 2px rgba(18, 202, 101, 0.73); */
+  border-radius: 20px;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+  
 }
+
 .grid-items {
   display: flex;
   flex-direction: column;
@@ -110,11 +120,14 @@ h1 {
   text-decoration: none;
   color: #fff;
   transition: 0.3s ease;
+  box-shadow: 1px 1px 6px 2px rgba(18, 202, 101, 0.73);
 }
+
 .border-img {
   width: 100%;
   height: 180px;
 }
+
 .border-img img {
   width: 100%;
   height: 100%;
@@ -135,9 +148,11 @@ h1 {
   overflow: hidden;
   border-radius: 10px;
 }
+
 .grid-items h2:first-child {
   transition: 0.3s ease;
 }
+
 .grid-items p:nth-child(2) {
   color: #ccc;
   border-bottom: 2px solid #13bb9a;
@@ -146,6 +161,7 @@ h1 {
   margin-top: 10px;
   transition: 0.3s ease;
 }
+
 .grid-items h2.title {
   color: #13bb9a;
   font-weight: 300;
@@ -164,21 +180,26 @@ h1 {
   overflow: hidden;
   color: #ffffff;
   transition: 0.3s ease;
+  
 }
 
 /* hover */
 .grid-items:hover {
   background: #a4a4a425;
 }
+
 .grid-items:hover h2:first-child {
   color: #333;
 }
+
 .grid-items:hover p:nth-child(2) {
   border-bottom: 2px solid #333;
 }
+
 .grid-items:hover h2.title {
   color: #333;
 }
+
 .grid-items:hover p:nth-child(4) {
   color: #777;
 }
@@ -187,14 +208,17 @@ h1 {
   body {
     height: auto;
   }
+
   .container {
     width: 300px;
   }
+
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
+
 /*ส่วนของรายการอสังหาริมทรัพย์ให้เช่า*/
 
 #ad_location {
@@ -205,7 +229,9 @@ h1 {
   border-color: #000000;
   border: 10px;
   margin-top: 10px;
+  box-shadow: 1px 1px 6px 2px rgba(18, 202, 101, 0.73);
 }
+
 #ad_location .text1 {
   font-size: 30px;
   padding-top: 70px;
@@ -222,12 +248,16 @@ h1 {
   margin: 50px auto;
   margin-top: 10px;
   padding: 10px;
+  /* box-shadow: 1px 1px 6px 2px rgba(18, 202, 101, 0.73); */
+  border-radius: 20px;
 }
 
 .item {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
+  box-shadow: 1px 1px 6px 2px rgba(18, 202, 101, 0.73);
 }
+
 /*ส่วนของข่าว*/
 
 * {
@@ -235,14 +265,19 @@ h1 {
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   max-width: 1170px;
   margin: auto;
 }
+
+/* 
+footer */
 .row {
   display: flex;
   flex-wrap: wrap;
 }
+
 ul {
   list-style: none;
 }
@@ -251,6 +286,7 @@ footer {
   height: 500px;
   padding: 85px 10px !important;
   background-color: #125c38;
+  box-shadow: 1px 1px 6px 2px rgba(18, 202, 101, 0.73);
 }
 
 .contacts {
@@ -281,6 +317,7 @@ footer {
 .contacts ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .contacts ul li a {
   font-size: 16px;
   text-transform: capitalize;
@@ -291,6 +328,7 @@ footer {
   display: block;
   transition: all 0.3s ease;
 }
+
 .contacts ul li a:hover {
   color: #ffffff;
   padding-left: 8px;
@@ -329,11 +367,13 @@ footer {
     margin-bottom: 30px;
   }
 }
+
 @media (max-width: 574px) {
   .footer-col {
     width: 100%;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -351,6 +391,7 @@ html {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 1px 1px 6px 2px rgba(18, 202, 101, 0.73);
 }
 
 .slides {
@@ -399,43 +440,45 @@ html {
   background: #ffffff;
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
   margin-left: -20%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
   margin-left: -40%;
 }
 
-#radio4:checked ~ .first {
+#radio4:checked~.first {
   margin-left: -60%;
 }
 
 /*css for automatic navigation*/
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
+#radio1:checked~.navigation-auto .auto-btn1 {
   background: #42e05d;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2 {
+#radio2:checked~.navigation-auto .auto-btn2 {
   background: #dd7f32;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+#radio3:checked~.navigation-auto .auto-btn3 {
   background: #74166c;
 }
 
-#radio4:checked ~ .navigation-auto .auto-btn4 {
+#radio4:checked~.navigation-auto .auto-btn4 {
   background: #2916cf;
 }
+
 /* ------------------------------------------------- */
 /*======= Google fonts =======*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Kanit:wght@100;200;300&family=Poppins:wght@100;300&display=swap");
+
 /*======= Main Css =======*/
 * {
   margin: 0;
@@ -663,6 +706,7 @@ header .nav-bar {
     cursor: pointer;
   }
 }
+
 .navigation .nav-items a1 {
   background-color: red;
   color: rgb(255, 255, 255);
@@ -680,6 +724,7 @@ header .nav-bar {
   margin-left: -80px;
   padding-top: 20px;
 }
+
 /* end navbar */
 .container {
   width: 100%;
@@ -690,7 +735,9 @@ header .nav-bar {
   margin-left: 380px;
   margin-top: none;
 }
+
 .search-bar {
+  margin-top: -50px;
   margin-left: 285px;
   width: 100%;
   max-width: 600px;
@@ -702,6 +749,7 @@ header .nav-bar {
   padding: 10px 20px;
   backdrop-filter: blur(4px) saturate(180%);
   background-color: #d8c2c2;
+  box-shadow: 1px 1px 6px 2px rgba(18, 202, 101, 0.73);
 }
 
 .search-bar input {
@@ -717,9 +765,11 @@ header .nav-bar {
 ::placeholder {
   color: #000000;
 }
+
 .search-bar button img {
   width: 30px;
 }
+
 .search-bar button {
   border: 0;
   border-radius: 50%;
