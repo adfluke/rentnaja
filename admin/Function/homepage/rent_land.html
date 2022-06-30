@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rent_land</title>
+    <link rel="stylesheet" href="/mui/mui/card-new(rent_land).css" />
+    <link rel="stylesheet" href="./card-new(rent_land).css" />
+    <link rel="stylesheet " href="/mui/mui/styslider.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="/mui/mui/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ส่วนของบาร์ข้างบน -->
+    <header>
+      <nav class="main-nav">
+        <ul class="navlinks">
+          <li><a href="/index.html">หน้าแรก</a></li>
+          <li><a href="rent.html">ให้เช่า</a></li>
+          <li><a href="Recommended_items.html">รายการแนะนำ</a></li>
+          <li><a href="#">เกี่ยวกับเรา</a></li>
+          <li><a href="contact_us.html">ติดต่อเรา</a></li>
+          <li><a href="#">ข่าว</a></li>
+          <li><a href="submit-land.html" class="contact">+ ลงประกาศ</a></li>
+          <li>
+            <a href="login-th.html"
+              >เข้าสู่ระบบ / <a href="register-th.html">สมัครสมาชิก</a></a
+            >
+          </li>
+        </ul>
+        <div class="logo">
+          <img src="/img/img/logo.png" alt="" id="vv" />
+        </div>
+      </nav>
+    </header>
+    <!-- ส่วนของบาร์ข้างบน -->
+
+    <!-- ส่วนของสไลด์ -->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="/auto_image/image/home1.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/auto_image/image/home2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/auto_image/image/home3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/auto_image/image/home4.jpeg" alt="" />
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+    <!-- ส่วนของสไลด์ -->
+
+    <!-- ช่องค้นหา-->
+    <div class="search-input" id="search_location1">
+      <p class="text2">ช่องสำหรับค้นหา</p>
+      <div id="search1">
+        <input id="input1" placeholder="กรอกชื่อ ทำเล โครงการ / รถไฟฟ้า" />
+        <button id="button1">
+          <i class="fa fa-search"></i>
+        </button>
+        <div class="spinner"><i class="fa fa-spinner"></i></div>
+      </div>
+      <script src="script1.js"></script>
+
+      <label>
+        <select id="select1">
+          <option>-ประเภทอสังหาริมทรัพย์-</option>
+          <option>ที่ดิน</option>
+          <option>คอนโด</option>
+          <option>บ้าน</option>
+          <option>โฮมออฟฟิศ</option>
+          <option>ทาวน์โฮม</option>
+          <option>พูลวิลล่า</option>
+          <option>อาคารพานิชย์</option>
+          <option>พื้นที่ให้เช่า</option>
+          <option>สำนักงาน</option>
+          <option>โรงงาน</option>
+          <option>โกดัง</option>
+        </select>
+      </label>
+
+      <label>
+        <select id="select2">
+          <option>-ราคา-</option>
+          <option>ราคาน้อย-มาก</option>
+          <option>ราคามาก-น้อย</option>
+        </select>
+      </label>
+
+      <label>
+        <select id="select3">
+          <option>-ตัวกรอง-</option>
+        </select>
+      </label>
+      <input type="submit" value="ค้นหา" id="Submit" />
+    </div>
+
+    <!-- ส่วนแสดงข้อมูลที่ดิน-->
+    <h1>ที่ดิน</h1>
+    <section class="container">
+      <div class="containers">
+        <!--item1-->
+        <div class="product">
+          <div class="product-card">
+            <h2 class="name">ที่ดิน</h2>
+            <span class="price">32,000,000 บาท </span>
+            <a class="popup-btn">Read more </a>
+            <img class="product-img" src="./moc_image/moc2.png" alt="" />
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-btn"></i> </a>
+              <div class="product-img">
+                <img src="/mui/mui/moc_image/moc2.png" alt="" />
+              </div>
+              <div class="info">
+                <h2>ที่ดิน</h2>
+                <p>
+                  บ้านนอกโครงการทำเลชานเมือง บ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของบ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของ บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+                  บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ
+                </p>
+                <span class="price">35,000,000 บาท</span>
+                <a href="./index.html" class="add-cart-btn">เช่า</a>
+                <a href="#" class="add-wish">เพิ่มไปที่รายการโปรด</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item2-->
+        <div class="product">
+          <div class="product-card">
+            <h2 class="name">ที่ดิน</h2>
+            <span class="price">32,000,000 บาท </span>
+            <a class="popup-btn">Read more </a>
+            <img class="product-img" src="./moc_image/moc3.png" alt="" />
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-btn"></i> </a>
+              <div class="product-img">
+                <img src="./moc_image/moc3.png" alt="" />
+              </div>
+              <div class="info">
+                <h2>ที่ดิน</h2>
+                <p>
+                  บ้านนอกโครงการทำเลชานเมือง บ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของบ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของ บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+                  บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ
+                </p>
+                <span class="price">35,000,000 บาท</span>
+                <a href="#" class="add-cart-btn">เช่า</a>
+                <a href="#" class="add-wish">เพิ่มไปที่รายการโปรด</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item3-->
+        <div class="product">
+          <div class="product-card">
+            <h2 class="name">ที่ดิน</h2>
+            <span class="price">32,000,000 บาท </span>
+            <a class="popup-btn">Read more </a>
+            <img class="product-img" src="./moc_image/moc4.png" alt="" />
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-btn"></i> </a>
+              <div class="product-img">
+                <img src="./moc_image/moc4.png" alt="" />
+              </div>
+              <div class="info">
+                <h2>ที่ดิน</h2>
+                <p>
+                  บ้านนอกโครงการทำเลชานเมือง บ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของบ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของ บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+                  บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ
+                </p>
+                <span class="price">35,000,000 บาท</span>
+                <a href="#" class="add-cart-btn">เช่า</a>
+                <a href="#" class="add-wish">เพิ่มไปที่รายการโปรด</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item4-->
+        <div class="product">
+          <div class="product-card">
+            <h2 class="name">ที่ดิน</h2>
+            <span class="price">32,000,000 บาท </span>
+            <a class="popup-btn">Read more </a>
+            <img class="product-img" src="./moc_image/moc4.png" alt="" />
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-btn"></i> </a>
+              <div class="product-img">
+                <img src="./moc_image/moc4.png" alt="" />
+              </div>
+              <div class="info">
+                <h2>ที่ดิน</h2>
+                <p>
+                  บ้านนอกโครงการทำเลชานเมือง บ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของบ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของ บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+                  บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ
+                </p>
+                <span class="price">35,000,000 บาท</span>
+                <a href="#" class="add-cart-btn">เช่า</a>
+                <a href="#" class="add-wish">เพิ่มไปที่รายการโปรด</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item5-->
+        <div class="product">
+          <div class="product-card">
+            <h2 class="name">ที่ดิน</h2>
+            <span class="price">32,000,000 บาท </span>
+            <a class="popup-btn">Read more </a>
+            <img class="product-img" src="./moc_image/moc4.png" alt="" />
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-btn"></i> </a>
+              <div class="product-img">
+                <img src="./moc_image/moc4.png" alt="" />
+              </div>
+              <div class="info">
+                <h2>ที่ดิน</h2>
+                <p>
+                  บ้านนอกโครงการทำเลชานเมือง บ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของบ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของ บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+                  บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ
+                </p>
+                <span class="price">35,000,000 บาท</span>
+                <a href="#" class="add-cart-btn">เช่า</a>
+                <a href="#" class="add-wish">เพิ่มไปที่รายการโปรด</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--item6-->
+        <div class="product">
+          <div class="product-card">
+            <h2 class="name">ที่ดิน</h2>
+            <span class="price">32,000,000 บาท </span>
+            <a class="popup-btn">Read more </a>
+            <img class="product-img" src="./moc_image/moc2.png" alt="" />
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-btn"></i> </a>
+              <div class="product-img">
+                <img src="/mui/mui/moc_image/moc2.png" alt="" />
+              </div>
+              <div class="info">
+                <h2>ที่ดิน</h2>
+                <p>
+                  บ้านนอกโครงการทำเลชานเมือง บ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของบ้านนอกโครงการทำเลชานเมือง
+                  บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ บ้านใหม่แกะกล่อง
+                  รีบจับจองเป็นเจ้าของ บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+                  บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ
+                </p>
+                <span class="price">35,000,000 บาท</span>
+                <a href="./index.html" class="add-cart-btn">เช่า</a>
+                <a href="#" class="add-wish">เพิ่มไปที่รายการโปรด</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      var popupViews = document.querySelectorAll(".popup-view");
+      var popupBtns = document.querySelectorAll(".popup-btn");
+      var closeBtns = document.querySelectorAll(".close-btn");
+
+      //javascript for quick view button
+      var popup = function (popupClick) {
+        popupViews[popupClick].classList.add("active");
+      };
+
+      popupBtns.forEach((popupBtn, i) => {
+        popupBtn.addEventListener("click", () => {
+          popup(i);
+        });
+      });
+
+      //javascript for close button
+      closeBtns.forEach((closeBtn) => {
+        closeBtn.addEventListener("click", () => {
+          popupViews.forEach((popupView) => {
+            popupView.classList.remove("active");
+          });
+        });
+      });
+    </script>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="contacts">
+            <h3>บิลเลี่ยน บี</h3>
+            <ul>
+              <li><a></a></li>
+              <li>
+                <a
+                  >บริษัท บิลเลี่ยนบี จำกัด เป็นบริษัทอสังหาริมทรัพย์ (Property
+                  Consultant / Real Estate Agency)
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <h3>ที่อยู่บริษัท</h3>
+            <ul>
+              <li><a></a></li>
+              <li>
+                <a href="#">95/327 หมู่ 1 ศาลากลาง บางกรวย นนทบุรี 11130</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <h3>ติดต่อเรา</h3>
+            <ul>
+              <li><a></a></li>
+              <li><a>669 5758 8196</a></li>
+              <li><a>668 2187 7537</a></li>
+              <li><a>668 8852 5333</a></li>
+              <li><a>668 2227 8759</a></li>
+              <li><a>ไลน์ : @billionbproperty</a></li>
+              <li><a>billionbproperty@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <h3>ติดตามเรา</h3>
+            <a href="https://www.facebook.com/BillionBproperty3/"
+              ><i class="fab fa-facebook" alt="" id="bb"></i
+            ></a>
+            <a href="mailto:billionbproperty@gmail.com"
+              ><i class="fa fa-envelope" aria-hidden="true" alt="" id="bb"></i
+            ></a>
+            <a href="https://www.tiktok.com/@billionbproperty"
+              ><i class="fab fa-tiktok" alt="" id="bb"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCLYAOkRqaliytHvw9U8ch4w/featured"
+              ><i class="fab fa-youtube" id="bb"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

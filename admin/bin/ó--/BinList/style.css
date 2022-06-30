@@ -1,0 +1,25 @@
+body{font-size:12px;}
+.p-0{padding:0;}
+.codevoc-b2b .box{border:1px solid #ccc;border-radius: .25rem!important;padding:10px;margin:5px 0}
+.codevoc-b2b .btn-colored{display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;}
+.codevoc-b2b .b2b-action-btn btn{color:; }
+.codevoc-b2b .b2b-action-btn a:hover {color: rgb(125, 52, 52);
+    background-color: #007bff;
+    border-color: #007bff;}
+.codevoc-b2b .highlighet-section{background:rgba(0,0,0,.05)}
+
+.codevoc-b2b table tr:hover{background:#ecf5e7;-webkit-transition:background-color 1s ease-out;-moz-transition:background-color 1s ease-out;-o-transition:background-color 1s ease-out;transition:background-color 1s ease-out}

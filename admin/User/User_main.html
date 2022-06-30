@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../Style/style_Usermain.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    
+                    <div class="profile-pic-div">
+                        <img src="/img/img/image.jpg" id="photo">
+                        <input type="file" id="file">
+                        <label for="file" id="uploadBtn" >Choose Photo</label>
+                        
+                      </div>
+                      <label>ข้อมูลส่วนตัว</label>
+                </div>
+                
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+            
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+               
+                <ul class="menu-links">
+                    <div class="bottom-content">
+                        <li class="">
+                            <a href="/Homepage.html">
+                                <i class='bx bx-home-alt icon'></i>
+                                <span class="text nav-text">หน้าหลัก</span>
+                                </a>
+                    </li>
+                    </div>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">ข้อมูลส่วนตัว</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-bookmark-plus icon' ></i>
+                            <span class="text nav-text">รายการโปรด</span>
+                        </a>
+                    </li>
+
+                    <div class="bottom-content">
+                        <li class="">
+                            <a href="#">
+                                <i class='bx bx-table icon' ></i>
+                                <span class="text nav-text">ตารางเปรียบเทียบ</span>
+                            </a>
+                    </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-log-out bx-rotate-180 icon' ></i>
+                                <span class="text nav-text">ออกจากระบบ</span>
+                                </a>
+                    </li>
+               
+                   
+        </div>
+    </nav>
+        
+        <section class="home">
+            <div class="container"> 
+                
+                <div class="form-container">
+                    <div class="text">
+                        <p>ชื่อผู้ใช้:</p>
+                        <br>
+                        <p>รหัสประจำตัวผู้ใช้งาน:</p>
+                        <br>
+                        <p>รหัสผ่าน:</p>
+                    </div>
+                    <br>
+                    <h1>แก้ไขข้อมูลส่วนตัว</h1>
+                    <form>
+                        <p class="sub-text">แก้ไขข้อมูลส่วนตัว</p>
+                            <!--input-textland -->
+                        <p class="text-normal" >ชื่อ - นามสกุล </p>
+                            <input class="input-textname" type="text" >
+    
+                        <p class="text-normal" >อีเมล</p>
+                            <input class="input-textname" type="text" >
+    
+                        <p class="text-normal" >เบอร์โทรศัพท์</p>
+                            <input class="input-textname" type="text" >
+                      
+                         <table>
+
+                                <tr >
+                                    <td><p class="text-normal">ประเภทบัตร :</p></td>
+                                    <td><select class="select-card" id="" >
+                                        <option>-----------</option></select></td>
+                                    <td><p class="text-normal">เลขบัตร :</p></td>
+                                    <td><textarea class="input-text2" ></textarea></td>
+                                </tr>
+                                <td><p class="sub-text">จุดประสงค์ในการเช่า</p></td>
+                                </tr>
+                                <td><textarea class="input-info"  ></textarea></td>
+                                </tr>
+                                <tr >
+                                    <td><p class="text-normal" >ไลน์ไอดี</p></td>
+                                    <td><input class="input-lineid" type="text" ></td>
+                                    <td><p class="text-normal" >สัญชาติ</p></td>
+                                    <td><input class="input-lineid" type="text" ></td>
+                                </tr>
+
+                            </table>
+                            
+                        <p class="sub-text">ที่อยู่</p>
+                        <textarea class="input-textlocation"  ></textarea>
+                    <!-- ID CARD -->
+                                    <br>
+                                    <table class="Center">
+                                        <tr>
+                                
+                                 <div id="display-image"><img src="/img/img/IDCARD.png" id="image_X"/></div>
+                                  </tr>
+
+                                </table>
+                                
+                                  <!-- END ID CARD -->
+                                  <br>
+                                  <!-- buttonUpload -->
+                                  <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg" class="custom-file-input" >
+                                    <!-- End buttonUpload -->
+                     
+
+
+                    </form>
+                        
+                    <div class="btnall"> 
+                        <table>
+                           <button class="btn1"  > ยืนยันการแก้ไขข้อมูล</button> 
+                        </table>
+                    </div>
+                    
+                </div>
+    
+            </div>
+                
+            
+        </section>
+    </section>
+<!-- script side -->
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+<!-- end script side -->
+<!-- profile -->
+<script>
+    //declearing html elements
+
+const imgDiv = document.querySelector('.profile-pic-div');
+const img = document.querySelector('#photo');
+const file = document.querySelector('#file');
+const uploadBtn = document.querySelector('#uploadBtn');
+
+//if user hover on img div 
+
+imgDiv.addEventListener('mouseenter', function(){
+    uploadBtn.style.display = "block";
+});
+
+//if we hover out from img div
+
+imgDiv.addEventListener('mouseleave', function(){
+    uploadBtn.style.display = "none";
+});
+
+//lets work for image showing functionality when we choose an image to upload
+
+//when we choose a foto to upload
+
+file.addEventListener('change', function(){
+    //this refers to file
+    const choosedFile = this.files[0];
+
+    if (choosedFile) {
+
+        const reader = new FileReader(); //FileReader is a predefined function of JS
+
+        reader.addEventListener('load', function(){
+            img.setAttribute('src', reader.result);
+        });
+
+        reader.readAsDataURL(choosedFile);
+
+        //Allright is done
+
+        //please like the video
+        //comment if have any issue related to vide & also rate my work in comment section
+
+        //And aslo please subscribe for more tutorial like this
+
+        //thanks for watching
+    }
+});
+</script>
+<!-- end script profile -->
+<!-- IDCARD SCRIPT -->
+<script>
+    const image_input = document.querySelector("#image-input");
+    var image_x = document.getElementById('image_X');
+image_input.addEventListener("change", function() {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    const uploaded_image = reader.result;
+    document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+    image_x.parentNode.removeChild(image_x);
+  });
+  reader.readAsDataURL(this.files[0]);
+});
+
+
+</script>
+<!-- end IDCARD -->
+
+</body>
+</html>

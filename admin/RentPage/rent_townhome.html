@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rent_townhome</title>
+    <link rel="stylesheet" href="../Style/style_searchRent.css"/>
+  </head>
+  <body>
+   <!-- navbar -->
+  <header>
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="/img/img/logo.png" alt="" id="vv" />
+      </div>
+      <div class="navigation">
+        <div class="nav-items">
+          <i class="uil uil-times nav-close-btn"></i>
+          <a href="/Homepage.html"><i class="uil uil-home"></i>หน้าแรก</a>
+          <a href="/Menunavbar/Rentpage.html"><i class="uil uil-compass"></i>ให้เช่า</a>
+          <a href="/Menunavbar/Reccomendedpage.html"><i class="uil uil-info-circle"></i>รายการแนะนำ</a>
+          <a href="/Menunavbar/Aboutuspage.html"><i class="uil uil-document-layout-left"></i>เกี่ยวกับเรา</a>
+          <a href="/Menunavbar/Contactuspage.html"><i class="uil uil-document-layout-left"></i>ติดต่อเรา</a>
+          <a href="/Menunavbar/Newspage.html"><i class="uil uil-envelope"></i>ข่าว</a>
+          <a href="/Menunavbar/Questionpage.html"><i class="uil uil-envelope"></i>คำถาม</a>
+          <a1><a href="/rentnaja-main/Function/sidebar/index.html"><i class="uil uil-envelope"></i> + ลงประกาศ</a></a1>
+          <a href="/login/login.html"><i class="uil uil-envelope"></i>เข้าสู่ระบบ</a>
+        </div>
+      </div>
+      <i class="uil uil-apps nav-menu-btn"></i>
+    </div>
+    <div class="scroll-indicator-container">
+      <div class="scroll-indicator-bar"></div>
+    </div>
+  </header>
+  <!-- end navbar -->
+ <!-- slide image -->
+ <section class="home">
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <div class="slide first">
+        <img src="/img/image-autoimage/home1.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="/img/image-autoimage/home2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="/img/image-autoimage/home3.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="/img/image-autoimage/home4.jpeg" alt="">
+      </div>
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+  </div>
+  <!-- end slide image -->
+</section>
+
+    <!-- ช่องค้นหา-->
+    <body>
+      <div class="container">
+          <form action="https://www.google.com/search" method="get" class="search-bar">
+              <input type="text" placeholder="กรอกชื่อ ทำเล โครงการ/รถไฟฟ้า" id="input2">
+              <button type="submit"><img src="/img/img/search.png"></button>
+              <select id="select1">
+                <option>-ทาวน์โฮม-</option>
+              </select>
+              <select id="select1">
+                <option>-ราคา-</option>
+                <option>ราคาน้อย-มาก</option>
+                <option>ราคามาก-น้อย</option>
+              </select>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="border-radius: 60px;background-color: white;color: black; width: 100px;height: 30px;margin-top: -2px; border: 2px ;">
+                -ตัวกรอง-
+              </button>
+              <button id="btn-sub">ค้นหา</button>
+              
+            </div>
+            </form>
+            <label>
+              
+      
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title" style="color: black;"></h4>
+                      
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <label>ช่วงราคา</label><br>
+                      <label>0</label><input type="range" value="price" style="color: black;"><label>1000000</label>
+                      <br>
+                      <label>จำนวนห้อง</label>
+                      <br>
+                      <input type="checkbox">ห้องแม่บ้าน
+                      <input type="checkbox">1
+                      <input type="checkbox">2
+                      <input type="checkbox">3
+                      <input type="checkbox">4
+                      <input type="checkbox">5+
+                      <br>
+                      <label>จำนวนห้องน้ำ</label>
+                      <br>
+                      <input type="checkbox">1
+                      <input type="checkbox">2
+                      <input type="checkbox">3
+                      <input type="checkbox">4
+                      <input type="checkbox">5+
+                      <br>
+                      <label>ขนาดพื้นที่ใช้สอย</label>
+                      <select id="select1">
+                        <option>ไม่ระบุ</option>
+                        <option>น้อยกว่า 30 ตร.ม</option>
+                        <option>30-100 ตร.ม</option>
+                        <option>200-300 ตร.ม</option>
+                        <option>300-400 ตร.ม</option>
+                        <option>400-500 ตร.ม</option>
+                        <option>500-800 ตร.ม</option>
+                        <option>800-1000 ตร.ม</option>
+                        <option>มากกว่า 1000 ตร.ม</option>
+                      </select>
+                      <label>ตร.วา.</label>
+                      <select id="select1">
+                        <option>น้อยกว่า 20 ตร.วา.</option>
+                        <option>20-40 ตร.วา.</option>
+                        <option>40-100 ตร.วา.</option>
+                        <option>100-200 ตร.วา.</option>
+                        <option>200-300 ตร.วา.</option>
+                        <option>300-500 ตร.วา.</option>
+                        <option>มากกว่า500 ตร.วา.</option>
+                      </select>
+                      <label>ระยะเวลาเช่า</label>
+                      <select id="select1">
+                        <option>ไม่ระบุ</option>
+                        <option>6 เดือน</option>
+                        <option>1 ปี</option>
+                        <option>2 ปี</option>
+                        <option>3 ปี</option>
+                        <option>3 ปีขึ้นไป</option>
+                      </select>
+                      <br>
+                      <table>
+                      <col span="12">
+                      <tr>
+                        <td><input type="checkbox">เลี้ยงสัตว์ได้</td> 
+                        <td><input type="checkbox">รับชาวต่างชาติ</td>
+                      </tr>
+                      <td><input type="checkbox">ใกล้รถไฟฟ้า</td>
+                      <td> <input type="checkbox">ไม่รับชาวต่างชาติ</td>
+                    </tr>
+                      <td><input type="checkbox">ใกล้ทางด่วน</td>
+                      <td><input type="checkbox">ใกล้สนามบิน</td>
+                    </tr>
+                      <td><input type="checkbox">ใกล้โรงพยาบาล</td>
+                      <td><input type="checkbox">ใกล้โรงเรียน</td>
+                    </tr>
+                      <td><input type="checkbox">ใกล้มหาวิทยาลัย</td>
+                      <td><input type="checkbox">ใกล้ห้างสรระสินค้า</td>  
+                    </tr>
+                    <td><input type="checkbox">ใกล้โรงเรียนนานาชาติ</td>
+                      <td><input type="checkbox">ห้องแม่บ้าน</td>  
+                    </tr>
+                  </table>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <br>
+                      <button id="btn-sub" value="Close" data-dismiss="modal">ค้นหา</button>
+                      <button  id="btn-delete"value="Close" data-dismiss="modal">ลบข้อมูล</button>
+                      <!-- <button type="button" data-dismiss="modal">close</button> -->
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            
+      </div>
+
+  <br>
+  <br>
+<h1>ทาวน์โฮม</h1>
+<section class="container-1">
+  <div class="grid-container">
+    <!--item1-->
+    <div class="grid-items">
+      <u></u>
+      <div class="border-img">
+        <img src="/img/moc_image/moc2.png" />
+      </div>
+      <h2 class="title">ทาวน์โฮม</h2>
+      <p>
+        บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+        บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ
+      </p>
+      <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+    </div>
+
+    <!--item2-->
+    <div class="grid-items">
+      <u></u>
+      <div class="border-img">
+        <img src="/img/moc_image/moc2.png" />
+      </div>
+      <h2 class="title">ทาวน์โฮม</h2>
+      <p>
+        บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+        บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+        เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+        ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+      </p>
+      <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+    </div>
+    <!--item3-->
+
+    <div class="grid-items">
+      <u></u>
+      <div class="border-img">
+        <img src="/img/moc_image/moc2.png" />
+      </div>
+      <h2 class="title">ทาวน์โฮม</h2>
+      <p>
+        บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+        บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+        เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+        ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+      </p>
+      <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+    </div>
+
+    <!--item4-->
+    <div class="grid-items">
+      <u></u>
+      <div class="border-img">
+        <img src="/img/moc_image/moc2.png" />
+      </div>
+      <h2 class="title">ทาวน์โฮม</h2>
+      <p>
+        บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+        บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+        เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+        ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+      </p>
+      <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+    </div>
+    <!--item5-->
+
+    <div class="grid-items">
+      <u></u>
+      <div class="border-img">
+        <img src="/img/moc_image/moc2.png" />
+      </div>
+      <h2 class="title">ทาวน์โฮม</h2>
+      <p>
+        บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+        บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+        เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+        ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+      </p>
+      <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+    </div>
+    <!--item6-->
+    <div class="grid-items">
+      <u></u>
+      <div class="border-img">
+        <img src="/img/moc_image/moc2.png" />
+      </div>
+      <h2 class="title">ทาวน์โฮม</h2>
+      <p>
+        บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+        บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+        เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+        ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+      </p>
+      <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+    </div>
+    <!--item6-->
+  </div>
+</section>
+<!-- โฆษณา-->
+<div class="ad-input" id="ad_location">
+  <p class="text1">ช่องสำหรับโฆษณา</p>
+</div>
+<!--โฆษณา -->
+
+<!-- ส่วนของข่าว -->
+<h1>ข่าวเกี่ยวกับอสังหาริมทรัพย์</h1>
+<div class="grid">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+<!-- ส่วนของข่าว-->
+
+ <!--footer-->
+ <footer>
+  <div class="container">
+    <div class="row">
+      <div class="contacts">
+        <h3>บิลเลี่ยน บี</h3>
+        <ul>
+          <li><a></a></li>
+          <li>
+            <a
+              >บริษัท บิลเลี่ยนบี จำกัด เป็นบริษัทอสังหาริมทรัพย์ (Property
+              Consultant / Real Estate Agency)
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <h3>ที่อยู่บริษัท</h3>
+        <ul>
+          <li><a></a></li>
+          <li>
+            <a href="#">95/327 หมู่ 1 ศาลากลาง บางกรวย นนทบุรี 11130</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <h3>ติดต่อเรา</h3>
+        <ul>
+          <li><a></a></li>
+          <li><a>669 5758 8196</a></li>
+          <li><a>668 2187 7537</a></li>
+          <li><a>668 8852 5333</a></li>
+          <li><a>668 2227 8759</a></li>
+          <li><a>ไลน์ : @billionbproperty</a></li>
+          <li><a>billionbproperty@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <h3>ติดตามเรา</h3>
+        <a href="https://www.facebook.com/BillionBproperty3/"
+          ><i class="fab fa-facebook" alt="" id="bb"></i
+        ></a>
+        <a href="mailto:billionbproperty@gmail.com"
+          ><i class="fa fa-envelope" aria-hidden="true" alt="" id="bb"></i
+        ></a>
+        <a href="https://www.tiktok.com/@billionbproperty"
+          ><i class="fab fa-tiktok" alt="" id="bb"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCLYAOkRqaliytHvw9U8ch4w/featured"
+          ><i class="fab fa-youtube" id="bb"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--footer-->
+  <script>
+    //Javacript for the scroll indicator bar
+    window.addEventListener("scroll", () => {
+      const indicatorBar = document.querySelector(".scroll-indicator-bar");
+
+      const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollValue = (pageScroll / height) * 100;
+
+      indicatorBar.style.width = scrollValue + "%";
+    });
+
+    //Responsive navigation menu toggle
+    const menuBtn = document.querySelector(".nav-menu-btn");
+    const closeBtn = document.querySelector(".nav-close-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      navigation.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      navigation.classList.remove("active");
+    });
+  </script>
+  <!-- end script navbar -->
+  <!-- script slide -->
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if (counter > 4) {
+        counter = 1;
+      }
+    }, 5000);
+  </script>
+  <!-- end script slide -->
+</html>

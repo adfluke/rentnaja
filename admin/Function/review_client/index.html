@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Review</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div>
+    <section class="cardreview">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="textbox-1">
+              <img src="./image/quote.png" class="quote" />
+              <p>
+                Definition of Review Text, Examples, Characteristics, Objectives, Structure and Rules - As academic
+                people, we certainly have to read scientific works, including books. When we read a book, we must digest
+                the reading book carefully so that we can understand its contents. On the other hand, we need to
+                communicate our understanding in various forms for presentation or writing needs, such as research
+                proposals, research reports, scientific articles, final assignments, or thesis. Therefore, students need
+                the skills to review books.
+
+              </p>
+              <div class="details">
+                <div class="imageBox">
+                  <img src="./image/user.png" />
+                </div>
+                <h3><strong>User Account</strong><br><span>User</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="textbox-1">
+              <img src="./image/quote.png" class="quote" />
+              <p>
+                Review text is a text that contains reviews, ratings or reviews of a work such as a film, drama, or a
+                book. Text review also called reviewer. When reviewing a work, reviewers must be critical so that the
+                results of the review can contribute to the progress of the work.
+
+              </p>
+              <div class="details">
+                <div class="imageBox">
+                  <img src="./image/user.png" />
+                </div>
+                <h3><strong>Owner Account</strong><br><span>Owner</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="textbox-1">
+              <img src="./image/quote.png" class="quote" />
+              <p>
+                Reviews can also be called reviews. Reviews are generally written in the form of articles, so the review
+                text can also be called a review article, a review is a text that serves to weigh, assess, and critique
+                the reviewed work or event (Gerot & Wignell, 1994; Hyland & Diani, 2009) .
+
+              </p>
+              <div class="details">
+                <div class="imageBox">
+                  <img src="./image/user.png" />
+                </div>
+                <h3><strong>Agent Account</strong><br><span>Agent</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+  </div>
+  </section>
+  </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      },
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>

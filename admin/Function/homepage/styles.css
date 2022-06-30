@@ -1,0 +1,784 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+@font-face {
+  font-family: AstroSpace;
+  src: url(/fonts/AstroSpace.ttf);
+}
+/* css ในส่วนของ โฆษณา */
+#ad_location{
+  height: 200px;
+  width: 1000px;
+  margin-left: 444px;
+  background: #fff;
+  border-color: #000000;
+  border: 10px;
+  margin-top: 10px;
+}
+#ad_location .text1{
+  font-size: 30px;
+  padding-top: 70px;
+  text-align: center;
+}
+/* css ในส่วนของ โฆษณา */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F3F8;
+  position: relative;
+} */
+
+
+/*ส่วนของบาร์ข้างบน*/
+/* header {
+  background-color: #ffffff;
+}
+
+.main-nav {
+  height: 90px;
+}
+
+.navlinks {
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.navlinks li a {
+  color: rgb(83, 83, 83);
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s linear 0s;
+  text-transform: uppercase;
+}
+
+.navlinks li a:hover {
+  color: #afafaf;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #02d874;
+}
+
+.navlinks a.contact {
+  color: rgb(255, 255, 255);  
+}
+
+li a.contact {
+  background-color: #da0000;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  border-bottom: none;
+}
+
+li a.contact:hover {
+  background-color: #000000;
+  color: white;
+  border-bottom: none;
+}
+
+@media (max-width: 800px) {
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: -100%;
+    background: #222831;
+  }
+
+  .navlinks li {
+    display: block;
+  }
+
+  .navlinks li a {
+    font-size: 20px;
+  }
+
+  .navlinks li a:hover {
+    border-bottom: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ .navlinks {
+    right: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+} */
+
+/*ส่วนของบาร์ข้างบน*/
+
+/*ส่วนของสไลด์*/
+
+
+/*ส่วนของสไลด์*/
+
+/*ส่วนของค้นหา*/
+/* #search_location{
+  width: auto;
+  height: 60px;
+  background-color: #FFB2B2;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #ffffff;
+}
+
+p.text1{
+  margin-left: 60px;
+  color: #464646;
+  font-size: 18px;
+}
+
+#search {
+  align-items: center;
+  color: #00dbe2;
+  background: #ffffff;
+  border-radius: 30px;
+  border: 2px solid rgb(255, 146, 146);
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0 0.8em;
+  padding: 0.5em 0.5em 0.5em 1em;
+  transition: all 0.5s;
+  width: 500px;
+  margin-left: 20px;
+}
+
+#search button,
+#search input {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  outline: 0;
+}
+
+#search button {
+  cursor: pointer;
+  padding: 0 0.25em;
+}
+
+#search input {
+  flex: 1;
+}
+
+#search input::placeholder {
+  color: rgb(209, 209, 209);
+}
+
+#search .spinner {
+  animation: spinner 1s infinite linear;
+  display: none;
+  padding: 0 0.25em;
+}
+
+#search.loading button {
+  display: none;
+}
+
+#search.loading .spinner {
+  display: block;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+/*ส่วนของค้นหา*/
+
+/*ส่วนของประเภทอสังหาริมทรัพย์*/
+
+#search input {
+  flex: 1;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr ;
+  grid-template-rows: 150px 150px ;
+  grid-gap: 30px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.box {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.box-1 , .box-2 , .box-3 , .box-4 , .box-5 , .box-6 , .box-7 , .box-8 , .box-9  , .box-10  , .box-11  , .box-12   {
+  background-color: rgb(255, 255, 255);
+}
+
+a.box-1 {
+  text-decoration: none;
+}
+
+a.box-2 {
+  text-decoration: none;
+}
+
+a.box-3 {
+  text-decoration: none;
+}
+
+a.box-4 {
+  text-decoration: none;
+}
+
+a.box-5 {
+  text-decoration: none;
+}
+
+a.box-6 {
+  text-decoration: none;
+}
+
+a.box-7 {
+  text-decoration: none;
+}
+
+a.box-8 {
+  text-decoration: none;
+}
+
+a.box-9 {
+  text-decoration: none;
+}
+
+a.box-10 {
+  text-decoration: none;
+}
+
+a.box-11 {
+  text-decoration: none;
+}
+
+a.box-12 {
+  text-decoration: none;
+}
+
+/*ส่วนของประเภทอสังหาริมทรัพย์*/
+
+
+
+
+
+
+/*แก้*/
+/*ส่วนของรายการอสังหาริมทรัพย์ให้เช่า*/
+h1 {
+  color: #3B4965; /*ส่วนของประเภทอสังหาริมทรัพย์และของข่าวgr*/
+  font-size: 25px;
+  padding: 20px;
+  margin-left: 165px;
+}
+
+
+.container {
+  width: 1200px;
+  margin: 50px auto;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.grid-items {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: .3s ease;
+}
+.border-img {
+  width: 100%;
+  height: 180px;
+}
+.border-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+}
+
+.btn-rent-index{
+width: 100%;
+border: none;
+font-size: 20px;
+color: #fff;
+background-color: #13BB9A  ;
+padding: 12px;
+margin: 0 auto;
+object-fit: cover;
+overflow: hidden;
+border-radius: 10px;
+
+}
+.grid-items h2:first-child {
+  transition: .3s ease;
+  
+}
+.grid-items p:nth-child(2) {
+  color: #ccc;
+  border-bottom: 2px solid #13BB9A;
+  width: fit-content;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  transition: .3s ease;
+}
+.grid-items h2.title {
+  color: #13BB9A;
+  font-weight: 300;
+  margin: 20px 0;
+  margin-bottom: 1px;
+  height: 30px;
+  overflow: hidden;
+  transition: .3s ease;
+}
+
+/* รายละเอียดข้อมูลทรัพ*/
+.grid-items p:nth-child(4) {
+  height: 90px;
+  font-size: 16px;
+  line-height: 1.4rem;
+  overflow: hidden;
+  color: #000000;
+  transition: .3s ease;
+}
+
+
+
+/* hover */
+.grid-items:hover {
+  background: #a4a4a425;
+}
+.grid-items:hover h2:first-child {
+  color: #333;
+}
+.grid-items:hover p:nth-child(2) {
+  border-bottom: 2px solid #333;
+}
+.grid-items:hover h2.title {
+  color: #333;
+}
+.grid-items:hover p:nth-child(4) {
+  color: #777;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+      height: auto;
+  }
+  .container {
+      width: 300px;
+  }
+  .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+  }
+}
+/*ส่วนของรายการอสังหาริมทรัพย์ให้เช่า*/
+
+/*ส่วนของข่าว*/
+.grid {
+  display: grid;
+  gap: 50px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 500px   ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.item {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+/*ส่วนของข่าว*/
+
+
+
+
+
+/*  ส่วนของfooter */
+
+
+/*  ส่วนของfooter */
+
+
+h5{
+  color: #464646;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 18px;
+  margin-right: 30px;
+}
+
+p {
+  font-size: 17px;
+}
+
+
+.logo #vv{
+  width: 90px;
+  height: 90px;
+  margin-left: 50px;
+  padding-top: 5px;
+}
+
+hr{
+  margin-top: 160px;
+  color: #F1F3F8;
+}
+
+h4{
+  color: #F1F3F8;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+p.center{
+  color: #6C757D;
+}
+
+
+h1.h-primar{
+  margin-top:30px;
+  color: #3B4965;
+  margin-left: 25px;
+}
+
+.wallpaper1{
+  width: auto;
+  height: 460px;
+  background-color: #F0F0EF;
+  margin-bottom: 35px;
+}
+
+h1.h-primary{
+  margin-top:30px;
+  color: #3B4965;
+  margin-left: 550px;
+}
+
+#service {
+  margin-left: 18%;
+  display: flex;
+}
+
+#service .box {
+  padding: 30px;
+  margin: 3px 6px;
+  border-radius: 28px;
+}
+
+#service .box img {
+  margin-top: 20px;
+  padding-right: 30px;
+  height: 100px;
+  margin: auto;
+  display: block;
+  border-radius: 200px;
+}
+
+#service .box p {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 20px;
+  margin: 7px 0;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+h5.center{
+  text-align: center;
+  color: #3B4965;
+  font-size: 18px;
+}
+
+iframe {
+  margin-left: 240px;
+  margin-bottom: 30px;
+  border: none;
+  width: 70%;
+  height: 374px;
+  border-radius: 10px;
+}
+
+
+
+/*ส่วนของค้นหาหน้าสำหรับเช่า*/
+#search_location1{
+  width: auto;
+  height: 60px;
+  background-color: #FFB2B2;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  
+}
+
+p.text2{
+  margin-right: 20px;
+  margin-left: 10px;
+  color: #464646;
+  font-size: 18px;
+}
+
+#search1 {
+  align-items: center;
+  color: #00dbe2;
+  background: #ffffff;
+  border-radius: 30px;
+  border: 2px solid rgb(255, 146, 146);
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0 0.8em;
+  padding: 0.5em 0.5em 0.5em ;
+  transition: all 0.5s;
+  width: 250px;
+  margin-right: 10px;
+}
+
+#search1 button,
+#search1 input {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  outline: 0;
+}
+
+#search1 button {
+  cursor: pointer;
+  padding: 0 0.25em;
+}
+
+#search1 input {
+  flex: 1;
+}
+
+#search1 input::placeholder {
+  color: rgb(209, 209, 209);
+}
+
+#search1 .spinner {
+  animation: spinner 1s infinite linear;
+  display: none;
+  padding: 0 0.25em;
+}
+
+#search1.loading button {
+  display: none;
+}
+
+#search1.loading .spinner {
+  display: block;
+}
+
+#select1{
+  align-items: center;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid rgb(255, 146, 146);
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0 0.8em;
+  padding: 0.5em 0.5em 0.5em ;
+  transition: all 0.5s;
+  margin-right: 10px;
+}
+
+#select2{
+  align-items: center;
+  height: 40px;
+  width: 150px;
+  border-radius: 30px;
+  border: 2px solid rgb(255, 146, 146);
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0 0.8em;
+  padding: 0.6em 0.9em 1.0em ;
+  transition: all 0.5s;
+  margin-right: 10px;
+}
+
+#select3{
+  align-items: center;
+  height: 40px;
+  width:150px;
+  border-radius: 30px;
+  border: 2px solid rgb(255, 146, 146);
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0 0.8em;
+  padding: 0.6em 0.9em 1.0em ;
+  transition: all 0.5s;
+  margin-right: 10px;
+}
+
+
+
+#Submit {
+  background-color: #74C49D;
+  color: #ffffff;
+  font-size: 16px;
+  position: relative;
+  outline: none;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0 0.8em;
+  padding: 0.4em 0.8em ;
+  height: 39px;
+  width: 140px;
+  margin-right: 40px;
+
+}
+
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*ส่วนของค้นหาหน้าสำหรับเช่า*/
+
+/*slideshow*/
+.slidershow{
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.middle{
+  position: absolute;
+  top: 440px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar{
+  width: 35px;
+  height: 3px;
+  border: 1px solid #fff;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover{
+  background: #fff;
+}
+
+input[name ="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide #v1{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+
+

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../Style/style_NewsTable.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/sticky-header/bootstrap-table-sticky-header.css'><link rel="stylesheet" href="./style.css">
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+    <title>News Table</title>
+</head>
+
+<body>
+    
+    <nav class="sidebar close">
+        <header>
+            
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    
+                    <div class="profile-pic-div">
+                        <img src="/img/img/image.jpg" id="photo">
+                        <input type="file" id="file">
+                        <label for="file" id="uploadBtn" >Choose Photo</label>
+                        
+                      </div>
+                      <label class="labelCenter">ข้อมูลส่วนตัว</label>
+                </div>
+                
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+            
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <div class="bottom-content">
+                        <li class="">
+                            <a href="/Homepage.html">
+                                <i class='bx bx-home-alt icon'></i>
+                                <span class="text nav-text">หน้าหลัก</span>
+                                </a>
+                    </li>
+                    </div>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">จัดการข้อมูลผู้ใช้</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">อนุมัติประกาศ</span>
+                        </a>
+                    </li> <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">ดันประกาศ</span>
+                        </a>
+                    </li> <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">ยกเลิกบัญชีการใช้งานสมาชิก</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-buildings icon'></i>
+                            <span class="text nav-text">ยกเลิกการแสดงผลประกาศ</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-buildings icon'></i>
+                            <span class="text nav-text">รายงานตามเงื่อนไขที่ต้องการ</span>
+                        </a>
+                    </li>
+                    <div class="bottom-content">
+                        <li class="">
+                            <a href="#">
+                                <i class='bx bxs-megaphone icon' ></i>
+                                <span class="text nav-text">แบบฟอร์มลงข่าว</span>
+                            </a>
+                    </li>
+
+                    <div class="bottom-content">
+                        <li class="">
+                            <a href="#">
+                                <i class='bx bx-info-square icon' ></i>
+                                <span class="text nav-text">แบบฟอร์มแบนเนอร์</span>
+                                </a>
+                    </li>
+                    </div>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-buildings icon'></i>
+                            <span class="text nav-text">ตอบคำถาม</span>
+                        </a>
+                    </li>
+                    
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-log-out bx-rotate-180 icon' ></i>
+                                <span class="text nav-text">ออกจากระบบ</span>
+                                </a>
+                    </li>
+               
+                   
+        </div>
+    </nav>
+        
+        <section class="home">
+            <div class="container"> 
+                
+                <div class="form-container">
+                    <center><h1>ตารางข้อมูล</h1></center>
+                    <br>
+                    <a href="/Admin/Admin_NewsForm.html"><button onclick="" class="createBtn" >เพิ่มข้อมูล</button></a>
+                    <button onClick="window.location.reload();" class="refreshBtn">Refresh Page</button>
+ 
+                    <p class="selectright">แสดงรายการ : 
+                        <select>
+                        <option>---------</option>
+                    </select></p>
+                    <br>
+                    <br>
+                    <!-- tableData -->
+                    <form>
+                        <center>
+                        <table class="table1" id="createOrderTable">
+                            <!-- <table class="table1" id="tblCustomers"> -->
+                            <thead>
+                              <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">รูปภาพ</th>
+                                <th scope="col">หัวข้อข่าว</th>
+                                <th scope="col">สถานะ</th>
+                                <th scope="col">จัดการ</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                            
+                              <tr>
+                                <td>1</td>
+                                <td >Lorem ipsum dolor sit amet</td>
+                                <td >test1</td>  
+                                <td >show</td>        
+                                <td>
+                                    <input type="button" value="แก้ไข" onclick="edit-button" id="btnEdit" class="btnEdit">
+                                    <input type="button" value="ลบ" onclick="deleteRow(this);" class="btnDelete">
+                                </td>
+
+                            </div>
+                            <tr>
+                                <td>2</td>
+                                <td >Lorem ipsum dolor sit amet</td>
+                                <td >test2</td>  
+                                <td >hidden</td>        
+                                <td>
+                                    <input type="button" value="แก้ไข" onclick="edit-button" id="btnEdit" class="btnEdit">
+                                    <input type="button" value="ลบ" onclick="deleteRow(this);" class="btnDelete">
+                                </td>
+                               
+                              </td>
+                              <tr>
+                                <td>3</td>
+                                <td >Lorem ipsum dolor sit amet</td>
+                                <td >test3</td>  
+                                <td >hidden</td>        
+                                <td>
+                                    <input type="button" value="แก้ไข" onclick="edit-button" id="btnEdit" class="btnEdit">
+                                    <input type="button" value="ลบ" onclick="deleteRow(this);" class="btnDelete">
+                                </td>
+                               
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>        
+                              </tr>
+                            </tfoot>  
+                          </table>
+                          <!-- test -->
+                          
+                    </form>
+                </center>
+                <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+     <p>ยืนยันการลบข้อมูล</p>
+     <p>กรุณากด ตกลง เพื่อดำเนินการต่อ</p>
+     <input type="button" onclick="DeleteRows()" value="Delete">
+    </div>
+  
+  </div>
+    <!-- endmodal -->
+                    <!-- EndtableData -->
+                    <br>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#"class="active">1</a>
+                        <a  href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                      </div>
+        </section>
+    
+<!-- script side -->
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+<!-- end script side -->
+<!-- profile -->
+<script>
+    //declearing html elements
+
+const imgDiv = document.querySelector('.profile-pic-div');
+const img = document.querySelector('#photo');
+const file = document.querySelector('#file');
+const uploadBtn = document.querySelector('#uploadBtn');
+
+//if user hover on img div 
+
+imgDiv.addEventListener('mouseenter', function(){
+    uploadBtn.style.display = "block";
+});
+
+//if we hover out from img div
+
+imgDiv.addEventListener('mouseleave', function(){
+    uploadBtn.style.display = "none";
+});
+
+//lets work for image showing functionality when we choose an image to upload
+
+//when we choose a foto to upload
+
+file.addEventListener('change', function(){
+    //this refers to file
+    const choosedFile = this.files[0];
+
+    if (choosedFile) {
+
+        const reader = new FileReader(); //FileReader is a predefined function of JS
+
+        reader.addEventListener('load', function(){
+            img.setAttribute('src', reader.result);
+        });
+
+        reader.readAsDataURL(choosedFile);
+
+        //Allright is done
+
+        //please like the video
+        //comment if have any issue related to vide & also rate my work in comment section
+
+        //And aslo please subscribe for more tutorial like this
+
+        //thanks for watching
+    }
+});
+</script>
+<!-- end script profile -->
+<!-- IDCARD SCRIPT -->
+<script>
+    const image_input = document.querySelector("#image-input");
+    var image_x = document.getElementById('image_X');
+image_input.addEventListener("change", function() {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    const uploaded_image = reader.result;
+    document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+    image_x.parentNode.removeChild(image_x);
+  });
+  reader.readAsDataURL(this.files[0]);
+});
+
+
+</script>
+<!-- end IDCARD -->
+<!-- remove -->
+<script>
+    function deleteRow(el) {
+        if(!confirm("ต้องการลบข้อมูลนี้ใช่หรือไม่")) return;
+        
+        var tbl = el.parentNode.parentNode.parentNode;
+        var row = el.parentNode.parentNode.rowIndex;
+    
+        tbl.deleteRow(el);
+      
+    }
+    
+</script>
+<!-- end remove -->
+<!-- modal scr-->
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close");
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+<!-- endmodal scr -->
+<!-- edit scr -->
+<script>
+    const paragraph = document.getElementById("edit");
+const edit_button = document.getElementById("edit-button");
+const end_button = document.getElementById("end-editing");
+
+edit_button.addEventListener("click", function() {
+  paragraph.contentEditable = true;
+  paragraph.style.backgroundColor = "#dddbdb";
+} );
+
+end_button.addEventListener("click", function() {
+  paragraph.contentEditable = false;
+  paragraph.style.backgroundColor = "#ffe44d";
+} )
+</script>
+<!-- endedit scr -->
+<!-- pagenavi -->
+
+<!-- end pagenavi -->
+</body>
+
+</html>

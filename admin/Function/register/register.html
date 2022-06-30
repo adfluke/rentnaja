@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/LogReg/">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Niconne&display=swap" rel="stylesheet">
+    <title>Register Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <h1>Rent <span>NAJA</span></h1>
+        </div>
+        <div class="content" >
+        <!-- <div class="switch">
+	    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+	    <label for="language-toggle"></label>
+	    <span class="on">TH</span>
+	    <span class="off">EN</span>
+  	</div> -->
+ 
+            <h1>สมัครสมาชิก</h1><br>
+            <div action="../backend/register_db.php" method="post" class="form-group" style="margin-top: -45px;" >
+                
+            <label for="" style="color: black;" require>ชื่อ-นามสกุล<br></label><br>
+                <input type="text" class="form-control" name="userid"  aria-describedby="Username" placeholder="UserName">
+            </div>
+            <div class="form-group">
+                <label for="" style="color: black;" require>อีเมล</label><br>
+                <br>
+                <input type="text" class="form-control" name="email"  placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="" style="color: black;" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" require>เบอร์โทรศัพท์</label><br>
+                <br>
+                <input type="tel" class="form-control" name="tel"  placeholder="Tell">
+            </div>
+            <div class="form-group">
+                <label for="" style="color: black;" require>รหัสผ่าน</label><br>
+                <br>
+                <input type="password" class="form-control" name="password"  placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="" style="color: black;" require>ยืนยัน รหัสผ่าน</label><br>
+                <br>
+                <input type="password" class="form-control" name="confirmpassword"  placeholder="ConfirmPassword">        
+            </div>
+            <!-- <div class="form-check" style="margin-left: -250px">
+                
+            
+            </div> -->
+            <table style="margin-left: 125px; color: black;"><br>
+                <tr>
+                    <td><input class="form-check-input" type="radio" name="role" id="flexRadioDefault1" value="1" style="width: 100px;">ผู้เช่า</td>
+                 
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="radio" name="role" id="flexRadioDefault2" value="2" style="width: 100px;"> เจ้าของทรัพย์</td>
+
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="radio" name="role" id="flexRadioDefault3" value="3" style="color: black; width: 100px;">เอเจนซี่</td>
+                </tr>
+            </table><br>
+            <button type="submit" class="btn" name="reg_user" value="submit" style="margin-top: -2px;"><a href="/LogReg/login.html">สมัครสมาชิก</a></button>
+        </div>
+        
+    </div>
+</body>
+
+</html>
+

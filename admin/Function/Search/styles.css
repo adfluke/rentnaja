@@ -1,0 +1,739 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+@font-face {
+  font-family: AstroSpace;
+  src: url(/fonts/AstroSpace.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #F1F3F8;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/*ส่วนของบาร์ข้างบน*/
+header {
+  background-color: #ffffff;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.main-nav {
+  height: 90px;
+  
+}
+
+.navlinks {
+  position: static;
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.navlinks li a {
+  color: rgb(83, 83, 83);
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s linear 0s;
+  text-transform: uppercase;
+}
+
+.navlinks li a:hover {
+  color: #afafaf;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #02d874;
+}
+
+.navlinks a.contact {
+  color: rgb(255, 255, 255);  
+}
+
+li a.contact {
+  background-color: #da0000;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  border-bottom: none;
+}
+
+li a.contact:hover {
+  background-color: #000000;
+  color: white;
+  border-bottom: none;
+}
+
+@media (max-width: 800px) {
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: -100%;
+    background: #222831;
+  }
+
+  .navlinks li {
+    display: block;
+  }
+
+  .navlinks li a {
+    font-size: 20px;
+  }
+
+  .navlinks li a:hover {
+    border-bottom: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ .navlinks {
+    right: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+}
+/*ส่วนของบาร์ข้างบน*/
+
+/*ส่วนของสไลด์*/
+.wallpaper{
+  background-image: url("img/backg.png");
+  background-position:100px;
+  width: 100%;
+  height: 570px;
+  display: grid;
+  justify-content: center;
+}
+
+p.text{
+  text-align: center;
+  font-size: 24px;
+  padding-top: 20px;
+  height: 50px;
+  color: #3B4965;
+}
+
+p.text3{
+  text-align: center;
+  font-size: 24px;
+  padding-top: 75px;
+  height: 50px;
+  color: #3B4965;
+}
+/*ส่วนของสไลด์*/
+
+/*ส่วนของค้นหา*/
+
+/*ส่วนของค้นหาหน้าสำหรับเช่า*/
+
+/*slideshow*/
+.slidershow{
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.middle{
+  position: absolute;
+  top: 365px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar{
+  width: 35px;
+  height: 3px;
+  border: 1px solid #fff;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover{
+  background: #fff;
+}
+
+input[name ="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+  
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide #v1{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+/* Modal */
+.modal {
+  margin-top: 12px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin-top: 12px;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  float: right;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ModalEnd */
+/* InputRane */
+input[type=range]{
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #02d874;
+  border: #02d874;
+  margin-top: -4px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+/* InputRangeEnd */
+/*ส่วนของค้นหา*/
+
+/*ส่วนของประเภทอสังหาริมทรัพย์*/
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr ;
+  grid-template-rows: 150px 150px ;
+  grid-gap: 30px;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.box {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.box-1 , .box-2 , .box-3 , .box-4 , .box-5 , .box-6 , .box-7 , .box-8 , .box-9  , .box-10  , .box-11  , .box-12   {
+  background-color: rgb(255, 255, 255);
+}
+
+a.box-1 {
+  text-decoration: none;
+}
+
+a.box-2 {
+  text-decoration: none;
+}
+
+a.box-3 {
+  text-decoration: none;
+}
+
+a.box-4 {
+  text-decoration: none;
+}
+
+a.box-5 {
+  text-decoration: none;
+}
+
+a.box-6 {
+  text-decoration: none;
+}
+
+a.box-7 {
+  text-decoration: none;
+}
+
+a.box-8 {
+  text-decoration: none;
+}
+
+a.box-9 {
+  text-decoration: none;
+}
+
+a.box-10 {
+  text-decoration: none;
+}
+
+a.box-11 {
+  text-decoration: none;
+}
+
+a.box-12 {
+  text-decoration: none;
+}
+
+/*ส่วนของประเภทอสังหาริมทรัพย์*/
+
+/*ส่วนของรายการอสังหาริมทรัพย์ให้เช่า*/
+h1 {
+  color: #3B4965; /*ส่วนของประเภทอสังหาริมทรัพย์และของข่าวgr*/
+  font-size: 25px;
+  padding: 20px;
+  margin-left: 165px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px   ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-container1 {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px  ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-container2 {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px  ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-container3 {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px  ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-container4 {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px  ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-container5 {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px  ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-container6 {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px  ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-container7 {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px  ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-container8 {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px  ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-container9 {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px  ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-container10 {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px  ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.bn632-hover {
+  width: 315px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 370px;
+  height: 50px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 0px 0px 10px 10px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn22 {
+background-image: linear-gradient(
+    to right,
+    #13BB9A,
+    #3cba92,
+    #30dd8a,
+    #2bb673
+);
+box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+/*ส่วนของรายการอสังหาริมทรัพย์ให้เช่า*/
+
+/*ส่วนของข่าว*/
+.grid {
+  display: grid;
+  gap: 30px ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: 420px   ;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.item {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+/*ส่วนของข่าว*/
+
+/*  ส่วนของfooter */
+footer {
+  height: 190px;
+  padding: 10px;
+  background-color: #3987A8;
+}
+
+.contacts{
+  float:right;
+}
+
+.contacts h3{
+  color: #F1F3F8;
+  text-align :right;
+  margin-right: 160px;
+  padding-top: 10px;
+}
+
+.contacts #bb{
+  float:right;
+  width: 45px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 170px;
+  padding-top: 15px;
+}
+
+
+.contacts #cc{
+  float:right;
+  width: 44px;
+  height: 44px;
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+.contacts #dd{
+  float:right;
+  width: 40px;
+  height: 40px;
+  margin-left: 18px;
+  padding-top: 15px;
+}
+
+.contacts #ee{
+  float:right;
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.image #aa{
+  float:left;
+  height: 130px;
+  width: 130px;
+  padding-top: 5px;
+  margin-left: 120px;
+}
+/*  ส่วนของfooter */
+
+
+h5{
+  color: #464646;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 18px;
+  margin-right: 30px;
+}
+
+p {
+  font-size: 17px;
+}
+
+
+.logo #vv{
+  width: 90px;
+  height: 90px;
+  margin-left: 50px;
+  padding-top: 5px;
+}
+
+hr{
+  margin-top: 160px;
+  color: #F1F3F8;
+}
+
+h4{
+  color: #F1F3F8;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+p.center{
+  color: #6C757D;
+}
+
+
+h1.h-primar{
+  margin-top:30px;
+  color: #3B4965;
+  margin-left: 25px;
+}
+
+.wallpaper1{
+  width: auto;
+  height: 460px;
+  background-color: #F0F0EF;
+  margin-bottom: 35px;
+}
+
+h1.h-primary{
+  margin-top:30px;
+  color: #3B4965;
+  margin-left: 550px;
+}
+
+#service {
+  margin-left: 70px;
+  display: flex;
+}
+
+#service .box {
+  padding: 45px;
+  margin: 3px 6px;
+  border-radius: 28px;
+}
+
+#service .box img {
+  margin-top: 20px;
+  padding-right: 30px;
+  height: 100px;
+  margin: auto;
+  display: block;
+  border-radius: 200px;
+}
+
+#service .box p {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 20px;
+  margin: 7px 0;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+h5.center{
+  text-align: center;
+  color: #3B4965;
+  font-size: 18px;
+}
+
+iframe {
+  margin-left: 240px;
+  margin-bottom: 30px;
+  border: none;
+  width: 70%;
+  height: 374px;
+  border-radius: 10px;
+}
+
+
+
+/*ส่วนของค้นหาหน้าสำหรับเช่า*/

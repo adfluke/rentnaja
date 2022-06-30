@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rentnaja</title>
+    <link rel="stylesheet" href="/homepage/styles.css" />
+    <link rel="stylesheet" href="/homepage/card-new(rent_land).css" />
+    <link rel="stylesheet " href="/homepage/styslider.css" />
+    <link rel="stylesheet" href="/homepage/footer.css" />
+    <link rel="stylesheet" href="/Function/search_bar/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ส่วนของบาร์ข้างบน -->
+    <header>
+      <nav class="main-nav">
+        <ul class="navlinks">
+          <li><a href="/index.html">หน้าแรก</a></li>
+          <li><a href="/rentpage/rentpage.html">ให้เช่า</a></li>
+          <li><a href="/Recommended/Recommended.html">รายการแนะนำ</a></li>
+          <li><a href="/about us/about-us.html">เกี่ยวกับเรา</a></li>
+          <li><a href="#">ข่าว</a></li>
+          <li><a href="/sidebar/index.html" class="contact">+ ลงประกาศ</a></li>
+          <li>
+            <a href="/LogReg/login.html"
+              >เข้าสู่ระบบ / <a href="/LogReg/register.html">สมัครสมาชิก</a></a
+            >
+          </li>
+        </ul>
+        <div class="logo">
+          <img src="/img/img/logo.png" alt="" id="vv" />
+        </div>
+      </nav>
+    </header>
+    <!-- ส่วนของบาร์ข้างบน -->
+
+    <!-- ส่วนของสไลด์ -->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="/img/image-autoimage/home1.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/image-autoimage/home2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/image-autoimage/home3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/image-autoimage/home4.jpeg" alt="" />
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+    <!-- ส่วนของสไลด์ -->
+
+    <!-- ส่วนของรายการอสังหาริมทรัพย์ให้เช่า-->
+    <section class="container">
+      <class class="grid-container">
+        <!--item1-->
+        <div class="grid-items">
+          <u></u>
+          <div class="border-img">
+            <img src="/img/moc_image/moc2.png" />
+          </div>
+          <h2 class="title">ที่ดิน</h2>
+          <p>
+            บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+            บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ
+          </p>
+          <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+        </div>
+
+        <!--item2-->
+        <div class="grid-items">
+          <u></u>
+          <div class="border-img">
+            <img src="/img/moc_image/moc2.png" />
+          </div>
+          <h2 class="title">ที่ดิน</h2>
+          <p>
+            บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+            บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+            เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+            ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+          </p>
+          <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+        </div>
+        <!--item3-->
+
+        <div class="grid-items">
+          <u></u>
+          <div class="border-img">
+            <img src="/img/moc_image/moc2.png" />
+          </div>
+          <h2 class="title">ที่ดิน</h2>
+          <p>
+            บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+            บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+            เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+            ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+          </p>
+          <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+        </div>
+
+        <!--item1-->
+        <div class="grid-items">
+            <u></u>
+            <div class="border-img">
+              <img src="/img/moc_image/moc2.png" />
+            </div>
+            <h2 class="title">ที่ดิน</h2>
+            <p>
+              บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+              บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ
+            </p>
+            <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+          </div>
+  
+          <!--item2-->
+          <div class="grid-items">
+            <u></u>
+            <div class="border-img">
+              <img src="/img/moc_image/moc2.png" />
+            </div>
+            <h2 class="title">ที่ดิน</h2>
+            <p>
+              บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+              บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+              เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+              ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+            </p>
+            <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+          </div>
+          <!--item3-->
+  
+          <div class="grid-items">
+            <u></u>
+            <div class="border-img">
+              <img src="/img/moc_image/moc2.png" />
+            </div>
+            <h2 class="title">ที่ดิน</h2>
+            <p>
+              บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+              บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+              เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+              ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+            </p>
+            <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+          </div>
+
+          <!--item1-->
+        <div class="grid-items">
+            <u></u>
+            <div class="border-img">
+              <img src="/img/moc_image/moc2.png" />
+            </div>
+            <h2 class="title">ที่ดิน</h2>
+            <p>
+              บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+              บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ
+            </p>
+            <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+          </div>
+  
+          <!--item2-->
+          <div class="grid-items">
+            <u></u>
+            <div class="border-img">
+              <img src="/img/moc_image/moc2.png" />
+            </div>
+            <h2 class="title">ที่ดิน</h2>
+            <p>
+              บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+              บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+              เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+              ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+            </p>
+            <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+          </div>
+          <!--item3-->
+  
+          <div class="grid-items">
+            <u></u>
+            <div class="border-img">
+              <img src="/img/moc_image/moc2.png" />
+            </div>
+            <h2 class="title">ที่ดิน</h2>
+            <p>
+              บ้านนอกโครงการทำเลชานเมือง บ้านโมเดิร์นหรูทันสมัย พร้อมหลังคาโรงรถ
+              บ้านใหม่แกะกล่อง รีบจับจองเป็นเจ้าของ บ้าน 1 ห้องนอน 2 ห้องน้ำ
+              เนื้อที่ 80 ตร.ม. เดินทางสะดวก ใกล้สิ่งอำนวยความสะดวก ตลาด โรงเรียน
+              ราคา 1,000,000-2,000,000 บาท สนใจติดต่อ
+            </p>
+            <a href=""> <button class="btn-rent-index">เช่า</button> </a>
+          </div>
+   </class>
+   </section>
+    <!-- โฆษณา-->
+    <div class="ad-input" id="ad_location">
+        <p class="text1">ทำ function หน้า</p>
+      </div>
+      <!--โฆษณา -->
+    <!--footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="contacts">
+            <h3>บิลเลี่ยน บี</h3>
+            <ul>
+              <li><a></a></li>
+              <li>
+                <a
+                  >บริษัท บิลเลี่ยนบี จำกัด เป็นบริษัทอสังหาริมทรัพย์ (Property
+                  Consultant / Real Estate Agency)
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <h3>ที่อยู่บริษัท</h3>
+            <ul>
+              <li><a></a></li>
+              <li>
+                <a href="#">95/327 หมู่ 1 ศาลากลาง บางกรวย นนทบุรี 11130</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <h3>ติดต่อเรา</h3>
+            <ul>
+              <li><a></a></li>
+              <li><a>669 5758 8196</a></li>
+              <li><a>668 2187 7537</a></li>
+              <li><a>668 8852 5333</a></li>
+              <li><a>668 2227 8759</a></li>
+              <li><a>ไลน์ : @billionbproperty</a></li>
+              <li><a>billionbproperty@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <h3>ติดตามเรา</h3>
+            <a href="https://www.facebook.com/BillionBproperty3/"
+              ><i class="fab fa-facebook" alt="" id="bb"></i
+            ></a>
+            <a href="mailto:billionbproperty@gmail.com"
+              ><i class="fa fa-envelope" aria-hidden="true" alt="" id="bb"></i
+            ></a>
+            <a href="https://www.tiktok.com/@billionbproperty"
+              ><i class="fab fa-tiktok" alt="" id="bb"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCLYAOkRqaliytHvw9U8ch4w/featured"
+              ><i class="fab fa-youtube" id="bb"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer-->
+  </body>
+</html>
