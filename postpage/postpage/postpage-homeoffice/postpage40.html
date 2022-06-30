@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../style-postform40.css">
+    <link rel="stylesheet" href="../style-sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+    <title>PostHomeOffice40</title>
+</head>
+
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Rentnaja</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">    
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text"><strong>ประเภทอสังหาริมทรัพย์</strong></span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-land/postpage20-1.html">
+                            <i class='bx bx-map-pin icon'></i>
+                            <span class="text nav-text">ที่ดิน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-home/postpage20-1.html">
+                            <i class='bx bx-home icon' ></i>
+                            <span class="text nav-text">บ้าน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-condo/postpage20-1.html">
+                            <i class='bx bx-home-circle icon'></i>
+                            <span class="text nav-text">คอนโด</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-townhome/postpage20-1.html">
+                            <i class='bx bx-building-house icon'></i>
+                            <span class="text nav-text">ทาวน์โฮม</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-villa/postpage20-1.html">
+                            <i class='bx bx-home-smile icon' ></i>
+                            <span class="text nav-text">วิลล่า</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-commercial/postpage20-1.html">
+                            <i class='bx bxs-building-house icon'></i>
+                            <span class="text nav-text">อาคารพาณิชย์</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-homeoffice/Postpage-homeoffice20-1.html">
+                            <i class='bx bx-building-house icon'></i>
+                            <span class="text nav-text">โฮมออฟฟิศ</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-space/postpage20-1.html">
+                            <i class='bx bx-map-alt icon'></i>
+                            <span class="text nav-text">พื้นที่ให้เช่า</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-office/postpage20-1.html">
+                            <i class='bx bxs-business icon'></i>
+                            <span class="text nav-text">สำนักงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-factory/postpage20-1.html">
+                            <i class='bx bxs-factory icon' ></i>
+                            <span class="text nav-text">โรงงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-warehouse/postpage20-1.html">
+                            <i class='bx bxs-package icon' ></i>
+                            <span class="text nav-text">โกดัง</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-other/postpage20-1.html">
+                            <i class='bx bx-been-here icon'></i>
+                            <span class="text nav-text">อื่นๆ</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="container"> 
+            <div class="form-container">
+                <h1 class="text">ข้อมูลโครงการ</h1>
+                
+                <form>
+                    <p class="sub-text">รายละเอียด <span style="color: red;">*</span><span> :</p>
+                    <p class="validation">หมายเหตุ:ถ้าไม่มีข้อมูลให้ใส่ 0(ศูนย์)</p>
+                    <ul> 
+                        <li>
+                            <input type="radio" id="owner-option" name="selector">
+                            <label for="owner-option">มือหนึ่ง</label>
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="Agent-option" name="selector">
+                            <label for="Agent-option">มือสอง</label> 
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                          </ul>
+                        <p class="sub-text" > ระยะเวลาขั้นต่ำ<span style="color: red;">*</p>
+                        <select id="" style="border: 2px; border-radius: 20px;border-color: black;width: 50%;text-align: center;height: 45px;  margin-top: 15px;">
+                            <option>--------เลือกจำนวนเดือน---------</option>
+                        </select>                    
+                           <table>
+                            <br>
+                               <tr style="line-height: 20px">
+                                   <td><p class="quantity-room">จำนวนชั้น<span style="color: red;">*</span><span> :</span></p> </td>
+                                   <th><input  type="text"style="border: 2px; border-radius: 20px;border-color: black;width: 100px;height: 25px;text-align: center; margin-top:50px; margin-right:20px "></th>
+                                   <td><p class="quantity-room" >ห้องนอน<span style="color: red;">*</span><span> :</span></p></td>
+                                   <th><input  type="text" style="border: 2px; border-radius: 20px;border-color: black;width: 100px;height: 25px;text-align: center ;margin-top:50px; margin-right:20px  "></th>
+                                   <td><p class="quantity-room" >ห้องน้ำ<span style="color: red;">*</span><span> :</span></p></td>
+                                   <th><input  type="text"style="border: 2px; border-radius: 20px;border-color: black;width: 100px;height: 25px;text-align: center; margin-top:50px; margin-right:20px "></th>
+                               </tr>
+                                <td><p class="quantity-room" >ห้องครัว<span style="color: red;">*</span><span> :</span></p> </td>
+                                <th><input  type="text"style="border: 2px; border-radius: 20px;border-color: black;width: 100px;height: 25px;text-align: center;margin-top:50px; margin-right:20px "></th>
+                                <td><p class="quantity-room" >ห้องนั่งเล่น<span style="color: red;">*</span><span> :</span></p></td>
+                                <th><input  type="text"style="border: 2px; border-radius: 20px;border-color: black;width: 100px;height: 25px;text-align: center;margin-top:50px; margin-right:20px "></th>
+                                <td><p class="quantity-room">ที่จอดรถ<span style="color: red;">*</span><span> :</span></p></td>
+                                <th><input  type="text"style="border: 2px; border-radius: 20px;border-color: black;width: 100px;height: 25px;text-align: center;margin-top:50px; margin-right:20px "></th>
+                            </tr>
+                            <br>
+                           </table >
+                           <br>
+                           <p class="sub-text" >ทิศของระเบียง<span style="color: red;">*</p>
+                            <select id="" style="border: 2px; border-radius: 20px;border-color: black;width: 50%;text-align: center;height: 45px;margin-top: 15px;">
+                                <option>--------ทิศของระเบียง---------</option>
+                            </select>
+                           <br>
+
+
+                           <p class="sub-text">พื้นที่ใช้สอย (ตร.ม.)<span style="color: red;">*</span><span> :</p>
+                            <input type="text" style="border: 2px; border-radius: 20px;border-color: black;width: 50%;height: 45px;  padding: 12px 20px;margin-top: 15px;">
+                           <p class="sub-text">ขนาดพื้นที่ (ตร.วา.)<span style="color: red;">*</span><span> :</p>
+                            <input type="text" style="border: 2px; border-radius: 20px;border-color: black;width: 50%;height: 45px;  padding: 12px 20px; margin-top: 15px;">
+                        
+                        
+                        <p class="sub-text">รหัสทรัพย์สิน<span style="color: red;">*</span><span> :</p>
+                            <input type="text" name="" id="" style="border: 2px; border-radius: 20px;border-color: black;width: 30%;text-align: center;height: 45px;margin-top: 15px;" placeholder="xxxxxxxxxxxxxxxxxxxx">
+                            <p class="sub-text">สัญชาติที่ไม่สามารถทำการเช่าได้<span style="color: red;">*</span><span> :</p> 
+                                <select data-placeholder="เลือกประเทศ" class="chosen-select" multiple style="border: 2px; border-radius: 20px;border-color: black;width: 30%;text-align: center;height: 45px;width: 50%;height: 60px;margin-top: 15px;">
+                                    <table>
+                                    <option value="">กัมพูชา</option>
+                                    <option value="">เกาหลีใต้</option>
+                                    <option value="">แคนาดา</option>
+
+                                    <option value="">จีน</option>
+                                    <option value="">ญี่ปุ่น</option>
+                                    <option value="">ไทย</option>
+
+                                    <option value="">นอร์เวย์</option>
+                                    <option value="">เนเธอร์แลนด์</option>
+                                    <option value="">บราซิล</option>
+
+                                    <option value="">บรูไน</option>
+                                    <option value="">บังกลาเทศ</option>
+                                    <option value="">เบลเยี่ยม</option>
+
+                                    <option value="">โปรตุเกศ</option>
+                                    <option value="">ฝรั่งเศส</option>
+                                    <option value="">พม่า/เมียนมา</option>
+
+                                    <option value="">ฟิลิปปินส์</option>
+                                    <option value="">มาเลเซีย</option>
+                                    <option value="">เม็กซิโก</option>
+
+                                    <option value="">เยอรมนี</option>
+                                    <option value="">รัสเซีย</option>
+                                    <option value="">ลาว</option>
+
+                                    <option value="">เวียดนาม</option>
+                                    <option value="">สเปน</option>
+                                    <option value="">สวิตเซอร์แลนด์</option>
+
+                                    <option value="">สวีเดน</option>
+                                    <option value="">สหรัฐ</option>
+                                    <option value="">สหราชอาณาจักร</option>
+
+                                    <option value="">สิงคโปร์</option>
+                                    <option value="">ออสเตรเลีย</option>
+                                    <option value="">อาร์เจนติน่า</option>
+
+                                    <option value="">อิตาลี</option>
+                                    <option value="">อินเดีย</option>
+                                    <option value="">อินโดนีเซีย</option>
+                                    
+                                    <option value="">ไอซ์แลนด์</option>
+                                    <option value="">ไอร์แลนด์</option>
+                                    <option value="">UAE</option>
+                                </select>
+
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+                                <script src="app.js"></script>
+                                
+                            
+                </form>
+                
+                <div class="btnall"> 
+                    <table>
+                        <tr>
+                            <td>
+                                <button class="btn1"  > บันทึก</button> 
+                            </td>
+                            <td>
+                                <a href="./postpage60.html" >  <button class="btn2"  > ถัดไป</button> </a>
+                            </td>
+                        </tr>
+                    
+                    </table>
+                </div>
+            </div>
+
+        </div>
+            
+        
+    </section>
+
+    <script>
+        $(".chosen-select").chosen({
+        no_results_text: "Oops, nothing found!"
+          })
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
+<!-- EndMulti -->
+                            
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>

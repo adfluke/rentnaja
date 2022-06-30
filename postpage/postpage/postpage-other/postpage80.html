@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../style-postform80.css">
+    <link rel="stylesheet" href="../style-sidebar.css">
+    <link rel="stylesheet" href="../style-postform20.css">
+
+
+    <!--<link rel="stylesheet" href="80per.css"> -->
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+
+
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Rentnaja</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">    
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text"><strong>ประเภทอสังหาริมทรัพย์</strong></span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-land/postpage20-1.html">
+                            <i class='bx bx-map-pin icon'></i>
+                            <span class="text nav-text">ที่ดิน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-home/postpage20-1.html">
+                            <i class='bx bx-home icon' ></i>
+                            <span class="text nav-text">บ้าน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-condo/postpage20-1.html">
+                            <i class='bx bx-home-circle icon'></i>
+                            <span class="text nav-text">คอนโด</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-townhome/postpage20-1.html">
+                            <i class='bx bx-building-house icon'></i>
+                            <span class="text nav-text">ทาวน์โฮม</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-villa/postpage20-1.html">
+                            <i class='bx bx-home-smile icon' ></i>
+                            <span class="text nav-text">วิลล่า</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-commercial/postpage20-1.html">
+                            <i class='bx bxs-building-house icon'></i>
+                            <span class="text nav-text">อาคารพาณิชย์</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-homeoffice/Postpage-homeoffice20-1.html">
+                            <i class='bx bx-building-house icon'></i>
+                            <span class="text nav-text">โฮมออฟฟิศ</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-space/postpage20-1.html">
+                            <i class='bx bx-map-alt icon'></i>
+                            <span class="text nav-text">พื้นที่ให้เช่า</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-office/postpage20-1.html">
+                            <i class='bx bxs-business icon'></i>
+                            <span class="text nav-text">สำนักงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-factory/postpage20-1.html">
+                            <i class='bx bxs-factory icon' ></i>
+                            <span class="text nav-text">โรงงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-warehouse/postpage20-1.html">
+                            <i class='bx bxs-package icon' ></i>
+                            <span class="text nav-text">โกดัง</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../postpage-other/postpage20-1.html">
+                            <i class='bx bx-been-here icon'></i>
+                            <span class="text nav-text">อื่นๆ</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="container"> 
+            <div class="form-container">
+                <h1 class="text" >ข้อมูลโครงการ</h1>
+
+                <form>
+                    <p class="sub-text"> สิ่งอำนวยความสะดวกภายในที่พัก </p>
+                    <table>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="conditioner" > เครื่องปรับอากาศ </td>
+                                <td class="center"><input type="checkbox" name="fan"> พัดลม </td>
+                                <td class="right"><input type="checkbox" name="filter"> เครื่องกรองอากาศ </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="waterheater"> เครื่องทำน้ำอุ่น <br></td>
+                                <td class="center"><input type="checkbox"  name="kitchen"> ห้องครัว </td>
+                                <td class="right"><input type="checkbox"  name="wifi"> > Wi-Fi </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox"  name="cableTV"> เคเบิลทีวี </td>
+                                <td class="center"><input type="checkbox" name="satellite"> จานดาวเทียม </td>
+                                <td class="right"><input type="checkbox" name="directphone"> โทรศัพย์สายตรง <br></td>
+                                
+                            </label>
+                        </tr>             
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="intercom"> อินเตอร์คอม</td>
+                                <td class="center"><input type="checkbox"  name="storage"> ห้องเก็บเสื้อผ้า</td>
+                                <td class="right"><input type="checkbox"  name="burglar"> สัญญานกันขโมย </td>
+                            </label>
+                        </tr>       
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox"  name="doorlock"> digital Door Lock</td>
+                                <td class="center"><input type="checkbox"  name="doorphone"> Vidio Door Phone</td>
+                                <td class="right"><input type="checkbox"  name="dressingtable"> โต็ะเครื่องแป้ง</td>
+
+                            </label>
+                        </tr>       
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox"  name="washing"> เครื่องซักผ้า</td>
+                                <td class="center"><input type="checkbox" name="spindry"> เตรื่องปั่นผ้าแห้ง</td>
+                                <td class="right"><input type="checkbox"name="iron" > เตารีดผ้า</td>
+                            </label>
+                        </tr>    
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="ironbord"> โต๊ะรีดผ้า</td>
+                                <td class="center"><input type="checkbox"name="showerenclo" > ตู้อาบน้ำ</td>
+                                <td class="right"><input type="checkbox" name="bathtub"> อ่างอาบบน้ำ</td>
+                            </label>
+                        </tr>      
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="jacuzzi"> จากุชชี่</td>
+                                <td class="center"><input type="checkbox" name="privatebath"> ห้องอาบน้ำส่วนตัว</td>
+                                <td class="right"><input type="checkbox" name="parkingarea"> โรงจอดรถ</td>
+                            </label>
+                        </tr>          
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="CCTV"> กล้อง CCTV</td>
+                                <td class="center"><input type="checkbox" name="safe"> ตู้เซฟนิรภัย</td>
+                                <td class="right"><input type="checkbox" name="cleaner"> เครื่องดูดฝุ่น</td>
+                            </label>
+                        </tr>
+                    </table>
+
+                    <p class="sub-text">สิ่งอำนวยความสะดวกส่วนกลาง</p>
+                    <table>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="elevator"> ลิฟต์ </td>
+                                <td class="center"><input type="checkbox" name="minimart"> มินิมาร์ท </td>
+                                <td class="right"><input type="checkbox" name="Internetcafe"> อินเตอร์เน็ตคาเฟ่ภายในอาคาร </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="beautysalon"> ร้านทำผม-เสริมสวย </td>
+                                <td class="center"><input type="checkbox" name="security-guard"> เจ้าหน้าที่รักษาความปลอดภัย (รปภ) </td>
+                                <td class="right"><input type="checkbox" name="CCTV"> กล้องวงจรปิด CCTV </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox"name="keycart" > ระบบ Key Cart </td>
+                                <td class="center"><input type="checkbox" name="concierge"> เจ้าหน้าที่อำนวยความสะดวก </td>
+                                <td class="right"><input type="checkbox" name=" busservice"> Bus Service Service </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="laundry"> ห้องซักรีด </td>
+                                <td class="center"><input type="checkbox" name="meetingroom"> ห้องประชุมธุรกิจ </td>
+                                <td class="right"><input type="checkbox" name="eventroom"> ห้องจัดงาน </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="BBQ-area"> พื้นที่สำหรับบาร์บีคิว </td>
+                                <td class="center"><input type="checkbox" name="game-room"> ห้องเล่นเกม </td>
+                                <td class="right"><input type="checkbox" name="karaoke-room"> ห้องคาราโอเกะ </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="library"> ห้องสมุด </td>
+                                <td class="center"><input type="checkbox" name="lounge"> เลาจน์ </td>
+                                <td class="right"><input type="checkbox" name="sky-lounge"> สกายเลาจน์ </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="pavilion"> ศาลาชมทิวทัศน์ (พาวิลเลี่ยน) </td>
+                                <td class="center"><input type="checkbox" name="garden"> สวนส่วนกลาง </td>
+                                <td class="right"><input type="checkbox" name="lobby"> ล๊อบบี้ </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="pick-up-area"> พื้นที่รับส่ง </td>
+                                <td class="center"><input type="checkbox" name="pool"> สระว่ายน้ำ </td>
+                                <td class="right"><input type="checkbox" name="water-machine"> ตู้น้ำหยอดเหรียญ </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="washing-machine"> เครื่องซักผ้าหยอดเหรียญ </td>
+                                <td class="center"><input type="checkbox" name="fitness"> ห้องฟิตเนส </td>
+                                <td class="right"><input type="checkbox" name="children-pool"> สระว่ายน้ำเด็ก </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="steam-room"> ห้องอบไอน้ำ </td>
+                                <td class="center"><input type="checkbox" name="basketball"> สนามบาสเกตบอล </td>
+                                <td class="right"><input type="checkbox" name="locker-room"> ห้องเปลี่ยนเสื้อผ้า/ห้องล็อกเกอร์ </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="yoga-room"> ห้องเล่นโยคะ </td>
+                                <td class="center"><input type="checkbox" name="table-tennis"> ปิงปอง </td>
+                                <td class="right"><input type="checkbox" name="badminton-court"> สนามแบตมินตัน </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="tennis-court"> สนามเทนนิส </td>
+                                <td class="center"><input type="checkbox" name="billiard-room"> ห้องบิลเลี่ยด </td>
+                                <td class="right"><input type="checkbox" name="squash-room"> ห้องเล่นสควอช </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="playground"> สนามเด็กเล่น </td>
+                                <td class="center"><input type="checkbox" name="golf-driving-range"> สนามไดร์ฟกอล์ฟ </td>
+                                <td class="right"><input type="checkbox" name="club"> สโมสร </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="practice-golf-mat"> พรมตีกอล์ฟฝึกหัด </td>
+                                <td class="center"><input type="checkbox" name="Petanque"> ลานเล่นเปตอง </td>
+                                <td class="right"><input type="checkbox" name="golf-course" > สนามกอล์ฟ </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="jogging-track"> ลู่จ๊อกกิ่ง </td>
+                                <td class="center"><input type="checkbox" name="spa"> สปา </td>
+                            </label>
+                        </tr>
+                    </table>
+
+                    <p class="sub-text"> ฟอร์นิเจอร์ / อุปกรณ์ตกแต่ง </p>
+                    <table>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="sofa"> โซฟา </td>
+                                <td class="center"><input type="checkbox" name="table"> โต๊ะ </td>
+                                <td class="right"><input type="checkbox" name="wardrobe"> ตู้เสื้อผ้า </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="bookcase"> ตู้หนังสือ </td>
+                                <td class="center"><input type="checkbox" name="desk"> โต๊ะทำงาน </td>
+                                <td class="right"><input type="checkbox" name="telephone"> โทรศัพท์ </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="television"> โทรทัศน์ </td>
+                                <td class="center"><input type="checkbox" name="tv-stand">ชั้นวางทีวี </td>
+                                <td class="right"><input type="checkbox" name="dining-table"> โต๊ะอาหาร </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="kitchen-counter"> เคาท์เตอร์ครัว </td>
+                                <td class="center"><input type="checkbox" name="electric-stove"> เตาไฟฟ้า </td>
+                                <td class="right"><input type="checkbox" name="gas-stove"> เตาแก๊ส </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="hood"> เตรื่องดูดควันจากเตา </td>
+                                <td class="center"><input type="checkbox"  name="smoke-detector" > เครื่องตรวจจับควัน </td>
+                                <td class="right"><input type="checkbox"  name="fridge"> ตู้เย็น </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox"  name="water-purifier"> เครื่องกรองน้ำ </td>
+                                <td class="center"><input type="checkbox"  name="microwave"> เตาไมโครเวฟ </td>
+                                <td class="right"><input type="checkbox"  name="dishwasher"> เครื่องล้างจาน </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox"  name="empty-room"> ห้องเปล่า </td>
+                            </label>
+                        </tr>
+                    </table>
+
+                    <p class="sub-text">คุณสมบัติพิเศษ </p>
+                    <table>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="penthouse">เพนท์เฮ้าส์ </td>
+                                <td class="center"><input type="checkbox" name="private-pool"> สระว่ายน้ำส่วนตัว </td>
+                                <td class="right"><input type="checkbox" name="corner-room"> ห้องมุม </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="sea-view"> วิวทะเล </td>
+                                <td class="center"><input type="checkbox" name="city-view"> วิวเมือง </td>
+                                <td class="right"><input type="checkbox" name="gardent-view"> วิวสวนธรรมชาติ </td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label>
+                                <td class="left"><input type="checkbox" name="basement"> มีชั้นใต้ดิน </td>
+                                <td class="center"><input type="checkbox" name="near-road"> ติดถนน </td>
+                            </label>
+                        </tr>
+                    </table>
+
+                    
+        
+        
+        
+        
+                
+                </form>
+                
+                <div class="btnall"> 
+                    <table>
+                        <tr>
+                            <td>
+                                <button class="btn1"  > บันทึก</button> 
+                            </td>
+                            <td>
+                                <a href="./postpage100.html" >  <button class="btn2"  > ถัดไป</button> </a>
+                            </td>
+                        </tr>
+                    
+                    </table>
+                </div>
+                </div>
+            </div>
+
+        
+            
+        
+    </section>
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
